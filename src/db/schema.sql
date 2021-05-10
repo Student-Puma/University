@@ -88,7 +88,7 @@ CREATE TABLE `proyecto` (
   `ultima_actualizacion`    DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 
   PRIMARY KEY (`ID`),
-  FOREIGN KEY (`responsable`)
+  FOREIGN KEY (`jefe`)
     REFERENCES `empleado` (`ID`)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
