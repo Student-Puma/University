@@ -18,7 +18,7 @@ USE `tami`;
         y valoran los productos mediante opiniones. 
 */
 CREATE TABLE `cliente` (
-  `ID`						INT UNSIGNED NOT NULL AUTO_INCREMENT,   -- clave primaria
+  `ID`                      INT UNSIGNED NOT NULL AUTO_INCREMENT,   -- clave primaria
   `DNI`                     VARCHAR(9) NOT NULL,                    -- DNI del cliente
   `email`                   VARCHAR(60) NOT NULL,                   -- email de contacto
   `telefono`                VARCHAR(12) NOT NULL,                   -- teléfono de contacto
@@ -26,15 +26,12 @@ CREATE TABLE `cliente` (
   `primer_apellido`         VARCHAR(30) NOT NULL,                   -- primer apellido
   `genero`                  CHAR(1) NOT NULL,                       -- género
   `fecha_nacimiento`        DATE NOT NULL,                          -- fecha de nacimiento
-  `sector`                  VARCHAR(18) NOT NULL,                   -- sector en el que trabaja
   `empresa`                 VARCHAR(50) NULL,                       -- empresa para la que trabaja (NULL = particular)
   `ultima_actualizacion`    DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 
   PRIMARY KEY (`ID`),
   CONSTRAINT `chk_clie_genero`
-    CHECK (`genero` IN ('H','M','O')),
-  CONSTRAINT `chk_clie_sector`
-    CHECK (`sector` IN ('Estudiante', 'Sector IT', 'Sector Salud', 'Sector Finanzas', 'Sector Turismo', 'Sector Agricultura', 'Sector Transporte', 'Sector Educación', 'Sector Defensa', 'Desempleado', 'Otro'))
+    CHECK (`genero` IN ('H','M','O'))
 )ENGINE = InnoDB;
 
 
@@ -120,7 +117,7 @@ CREATE TABLE `programa` (
     @description: Versiones de cada programa
 */
 CREATE TABLE `version` (
-  `ID`						INT UNSIGNED NOT NULL AUTO_INCREMENT,           -- clave primaria
+  `ID`                      INT UNSIGNED NOT NULL AUTO_INCREMENT,           -- clave primaria
   `programa`                INT UNSIGNED NOT NULL,                          -- programa al que pertenece
   `major`                   INT UNSIGNED NOT NULL,                          -- versionado major
   `minor`                   INT UNSIGNED NOT NULL,                          -- versionado minor
@@ -153,8 +150,8 @@ CREATE TABLE `version` (
     @description: Licencias de programas generadas
 */
 CREATE TABLE `licencia` (
-  `ID`						INT UNSIGNED NOT NULL AUTO_INCREMENT,   -- clave primaria
-  `key`                     VARCHAR(32) NOT NULL,                   -- clave de la licencia
+  `ID`                      INT UNSIGNED NOT NULL AUTO_INCREMENT,   -- clave primaria
+  `clave`                   VARCHAR(32) NOT NULL,                   -- clave de la licencia
   `programa`                INT UNSIGNED NOT NULL,                  -- programa al que pertenece (se vende por programas, no por versiones)
   `ultima_actualizacion`    DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 
@@ -162,55 +159,32 @@ CREATE TABLE `licencia` (
   FOREIGN KEY (`programa`)
     REFERENCES `programa` (`ID`)
     ON DELETE CASCADE
-    ON UPDATE CASCADE
+    ON UPDATE CASCADE,
+  CONSTRAINT `uq_clave`
+    UNIQUE (`clave`)
 )ENGINE = InnoDB;
 
 /*
     @table: licencia_ventas
-    @primary: licencia.key
+    @primary: licencia_ventas.clave
     @description: Ventas de licencias
 */
 CREATE TABLE `licencia_venta` (
-  `key`						INT UNSIGNED NOT NULL,  -- clave primaria: licencia vendida
+  `clave`                   INT UNSIGNED NOT NULL,  -- clave primaria: licencia vendida
   `propietario`             INT UNSIGNED NOT NULL,  -- cliente
   `fecha_expiracion`        DATETIME NOT NULL,      -- fecha de expiración
-  `precio`                  DECIMAL(4,2) NOT NULL,  -- precio de venta
+  `precio`                  DECIMAL(4,2) NOT NULL DEFAULT '500,99',  -- precio de venta
   `ultima_actualizacion`    DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   
-  PRIMARY KEY (`key`),
+  PRIMARY KEY (`clave`),
+  FOREIGN KEY (`clave`)
+    REFERENCES `licencia` (`ID`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
   FOREIGN KEY (`propietario`)
     REFERENCES `cliente` (`ID`)
     ON DELETE CASCADE
     ON UPDATE CASCADE
-)ENGINE = InnoDB;
-
--- -----------------------------------------------------
--- Reportes
--- -----------------------------------------------------
-
-/*
-    @table: feedback
-    @primary: programa.ID & cliente.ID
-    @description: Opiniones de los clientes respecto a los programas
-*/
-CREATE TABLE `feedback` (
-  `programa`                INT UNSIGNED NOT NULL,  -- clave primaria: programa
-  `cliente`                 INT UNSIGNED NOT NULL,  -- clave primaria: cliente
-  `valoracion`              SMALLINT NOT NULL,      -- satisfacción con el programa
-  `comentario`              VARCHAR(200) NULL,      -- comentario opcional
-  `ultima_actualizacion`    DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-
-  PRIMARY KEY (`programa`, `cliente`),
-  FOREIGN KEY (`programa`)
-    REFERENCES `programa` (`ID`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE,
-  FOREIGN KEY (`cliente`)
-    REFERENCES `cliente` (`ID`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE,
-  CONSTRAINT `chk_feed_valoracion`
-    CHECK (`valoracion` >= 1 AND `valoracion` <= 5)
 )ENGINE = InnoDB;
 
 /*
@@ -221,7 +195,7 @@ CREATE TABLE `feedback` (
 CREATE TABLE `ticket` (
   `ID`                      INT UNSIGNED NOT NULL AUTO_INCREMENT,           -- clave primaria
   `cliente`                 INT UNSIGNED NOT NULL,                          -- cliente
-  `version`					INT UNSIGNED NOT NULL,                          -- versión del programa afectado
+  `version`                 INT UNSIGNED NOT NULL,                          -- versión del programa afectado
   `estado`                  VARCHAR(11) NOT NULL DEFAULT 'abierto',         -- estado del ticket
   `titulo`                  VARCHAR(50) NOT NULL,                           -- título del problema
   `descripcion`             VARCHAR(500) NOT NULL,                          -- descripción del problema
