@@ -436,8 +436,8 @@
   <notepads>
     <notepad>
       <note>Calcular edad</note>
-      <xloc>144</xloc>
-      <yloc>112</yloc>
+      <xloc>16</xloc>
+      <yloc>208</yloc>
       <width>101</width>
       <heigth>27</heigth>
       <fontname>Ubuntu</fontname>
@@ -456,11 +456,12 @@
       <drawshadow>Y</drawshadow>
     </notepad>
     <notepad>
-      <note>Obtener datos</note>
-      <xloc>16</xloc>
-      <yloc>16</yloc>
+      <note>Obtener datos
+(Cliente)</note>
+      <xloc>48</xloc>
+      <yloc>48</yloc>
       <width>108</width>
-      <heigth>27</heigth>
+      <heigth>44</heigth>
       <fontname>Ubuntu</fontname>
       <fontsize>11</fontsize>
       <fontbold>N</fontbold>
@@ -478,8 +479,8 @@
     </notepad>
     <notepad>
       <note>Formalización</note>
-      <xloc>320</xloc>
-      <yloc>208</yloc>
+      <xloc>752</xloc>
+      <yloc>48</yloc>
       <width>105</width>
       <heigth>27</heigth>
       <fontname>Ubuntu</fontname>
@@ -499,9 +500,51 @@
     </notepad>
     <notepad>
       <note>Subida</note>
-      <xloc>640</xloc>
-      <yloc>112</yloc>
+      <xloc>784</xloc>
+      <yloc>272</yloc>
       <width>56</width>
+      <heigth>27</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>11</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Fuente externa</note>
+      <xloc>32</xloc>
+      <yloc>304</yloc>
+      <width>110</width>
+      <heigth>27</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>11</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Unión</note>
+      <xloc>544</xloc>
+      <yloc>208</yloc>
+      <width>49</width>
       <heigth>27</heigth>
       <fontname>Ubuntu</fontname>
       <fontsize>11</fontsize>
@@ -646,27 +689,57 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Edad</from>
-      <to>Filtro</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
       <from>Dateline</from>
       <to>Clientes</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Filtro</from>
-      <to>Formalización Texto</to>
+      <from>Formalización Texto</from>
+      <to>Formalización Género</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Formalización Texto</from>
+      <from>Formalización Género</from>
       <to>Formalización Números</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
+      <from>Empresas</from>
+      <to>Empresa &amp; Sector</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Empresa &amp; Sector</from>
+      <to>Formalización</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Formalización</from>
+      <to>Ordenar</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Ordenar</from>
+      <to>Unión por clave</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
       <from>Formalización Números</from>
+      <to>Ordenar por empresa</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Ordenar por empresa</from>
+      <to>Unión por clave</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Edad</from>
+      <to>Formalización Texto</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Unión por clave</from>
       <to>DIM_Cliente</to>
       <enabled>Y</enabled>
     </hop>
@@ -944,8 +1017,8 @@ WHERE ultima_actualizacion > ?
       </output>
     </remotesteps>
     <GUI>
-      <xloc>288</xloc>
-      <yloc>16</yloc>
+      <xloc>160</xloc>
+      <yloc>128</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1051,8 +1124,8 @@ WHERE ultima_actualizacion > ?
       </output>
     </remotesteps>
     <GUI>
-      <xloc>736</xloc>
-      <yloc>112</yloc>
+      <xloc>800</xloc>
+      <yloc>208</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1111,8 +1184,8 @@ FROM dim_cliente
       </output>
     </remotesteps>
     <GUI>
-      <xloc>160</xloc>
-      <yloc>16</yloc>
+      <xloc>32</xloc>
+      <yloc>128</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1144,8 +1217,8 @@ FROM dim_cliente
       </output>
     </remotesteps>
     <GUI>
-      <xloc>464</xloc>
-      <yloc>112</yloc>
+      <xloc>336</xloc>
+      <yloc>208</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1185,8 +1258,264 @@ FROM dim_cliente
       </output>
     </remotesteps>
     <GUI>
-      <xloc>384</xloc>
-      <yloc>112</yloc>
+      <xloc>256</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Empresa &amp; Sector</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <remove>
+        <name>CP</name>
+      </remove>
+      <remove>
+        <name>contacto</name>
+      </remove>
+      <remove>
+        <name>direccion</name>
+      </remove>
+      <remove>
+        <name>email</name>
+      </remove>
+      <remove>
+        <name>fax</name>
+      </remove>
+      <remove>
+        <name>lat</name>
+      </remove>
+      <remove>
+        <name>lon</name>
+      </remove>
+      <remove>
+        <name>sector</name>
+      </remove>
+      <remove>
+        <name>telefono</name>
+      </remove>
+      <remove>
+        <name>web</name>
+      </remove>
+      <remove>
+        <name>zona</name>
+      </remove>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>304</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Empresas</name>
+    <type>CsvInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <filename>/home/student/Escritorio/TAMI/public/empresas.csv</filename>
+    <filename_field/>
+    <rownum_field>empresa_ID</rownum_field>
+    <include_filename>N</include_filename>
+    <separator>,</separator>
+    <enclosure>"</enclosure>
+    <header>N</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <format>mixed</format>
+    <encoding/>
+    <fields>
+      <field>
+        <name>empresa_nombre</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>direccion</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>CP</name>
+        <type>Integer</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>5</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>zona</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>telefono</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>fax</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>email</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>web</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>contacto</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>sector</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>empresa_sector</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>empresa_actividad</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>lat</name>
+        <type>Number</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>lon</name>
+        <type>Number</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>176</xloc>
+      <yloc>304</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1216,14 +1545,14 @@ FROM dim_cliente
       </output>
     </remotesteps>
     <GUI>
-      <xloc>288</xloc>
-      <yloc>112</yloc>
+      <xloc>160</xloc>
+      <yloc>208</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Filtro</name>
-    <type>SelectValues</type>
+    <name>Formalización</name>
+    <type>StringOperations</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -1233,13 +1562,45 @@ FROM dim_cliente
       <schema_name/>
     </partitioning>
     <fields>
-      <select_unspecified>N</select_unspecified>
-      <remove>
-        <name>dias</name>
-      </remove>
-      <remove>
-        <name>fecha_actual</name>
-      </remove>
+      <field>
+        <in_stream_name>empresa_nombre</in_stream_name>
+        <out_stream_name/>
+        <trim_type/>
+        <lower_upper>upper</lower_upper>
+        <padding_type/>
+        <pad_char/>
+        <pad_len/>
+        <init_cap/>
+        <mask_xml/>
+        <digits/>
+        <remove_special_characters/>
+      </field>
+      <field>
+        <in_stream_name>empresa_sector</in_stream_name>
+        <out_stream_name/>
+        <trim_type/>
+        <lower_upper>upper</lower_upper>
+        <padding_type/>
+        <pad_char/>
+        <pad_len/>
+        <init_cap/>
+        <mask_xml/>
+        <digits/>
+        <remove_special_characters/>
+      </field>
+      <field>
+        <in_stream_name>empresa_actividad</in_stream_name>
+        <out_stream_name/>
+        <trim_type/>
+        <lower_upper>upper</lower_upper>
+        <padding_type/>
+        <pad_char/>
+        <pad_len/>
+        <init_cap/>
+        <mask_xml/>
+        <digits/>
+        <remove_special_characters/>
+      </field>
     </fields>
     <attributes/>
     <cluster_schema/>
@@ -1250,8 +1611,91 @@ FROM dim_cliente
       </output>
     </remotesteps>
     <GUI>
-      <xloc>464</xloc>
-      <yloc>208</yloc>
+      <xloc>416</xloc>
+      <yloc>304</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Formalización Género</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <field_to_use>genero</field_to_use>
+    <target_field/>
+    <non_match_default/>
+    <fields>
+      <field>
+        <source_value>H</source_value>
+        <target_value>HOMBRE</target_value>
+      </field>
+      <field>
+        <source_value>M</source_value>
+        <target_value>MUJER</target_value>
+      </field>
+      <field>
+        <source_value>O</source_value>
+        <target_value>OTRO</target_value>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>496</xloc>
+      <yloc>48</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Formalización Números</name>
+    <type>Calculator</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <failIfNoFile>Y</failIfNoFile>
+    <calculation>
+      <field_name>ID</field_name>
+      <calc_type>ABS</calc_type>
+      <field_a>ID</field_a>
+      <field_b/>
+      <field_c/>
+      <value_type>Integer</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>Y</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>656</xloc>
+      <yloc>48</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1342,14 +1786,14 @@ FROM dim_cliente
       </output>
     </remotesteps>
     <GUI>
-      <xloc>576</xloc>
-      <yloc>208</yloc>
+      <xloc>336</xloc>
+      <yloc>48</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Formalización Números</name>
-    <type>Calculator</type>
+    <name>Unión por clave</name>
+    <type>MergeJoin</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -1358,22 +1802,15 @@ FROM dim_cliente
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <failIfNoFile>Y</failIfNoFile>
-    <calculation>
-      <field_name>ID</field_name>
-      <calc_type>ABS</calc_type>
-      <field_a>ID</field_a>
-      <field_b/>
-      <field_c/>
-      <value_type>Integer</value_type>
-      <value_length>-1</value_length>
-      <value_precision>-1</value_precision>
-      <remove>Y</remove>
-      <conversion_mask/>
-      <decimal_symbol/>
-      <grouping_symbol/>
-      <currency_symbol/>
-    </calculation>
+    <join_type>INNER</join_type>
+    <step1>Ordenar por empresa</step1>
+    <step2>Ordenar</step2>
+    <keys_1>
+      <key>empresa</key>
+    </keys_1>
+    <keys_2>
+      <key>empresa_nombre</key>
+    </keys_2>
     <attributes/>
     <cluster_schema/>
     <remotesteps>
@@ -1383,8 +1820,92 @@ FROM dim_cliente
       </output>
     </remotesteps>
     <GUI>
-      <xloc>736</xloc>
+      <xloc>656</xloc>
       <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Ordenar</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>empresa_nombre</name>
+        <ascending>Y</ascending>
+        <case_sensitive>Y</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>656</xloc>
+      <yloc>304</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Ordenar por empresa</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>empresa</name>
+        <ascending>Y</ascending>
+        <case_sensitive>Y</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>656</xloc>
+      <yloc>128</yloc>
       <draw>Y</draw>
     </GUI>
   </step>

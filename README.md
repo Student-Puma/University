@@ -7,7 +7,7 @@
 
 - [x] Schema: Base de datos
 - [ ] Data: Base de datos (falta `ticket`)
-- [ ] Dataset: Empresa > Sector (revisar)
+- [x] Dataset: Empresa > Sector / Actividad
 - [ ] Dataset: Programa > Feedback / Review (revisar)
 - [ ] Schema: Data WareHouse
 - [ ] Transformaciones

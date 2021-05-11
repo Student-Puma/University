@@ -24,7 +24,7 @@ CREATE TABLE `cliente` (
   `telefono`                VARCHAR(12) NOT NULL,                   -- teléfono de contacto
   `nombre`                  VARCHAR(45) NOT NULL,                   -- nombre del comprador
   `primer_apellido`         VARCHAR(30) NOT NULL,                   -- primer apellido
-  `genero`                  CHAR(1) NOT NULL,                       -- género
+  `genero`                  VARCHAR(6) NOT NULL,                    -- género
   `fecha_nacimiento`        DATE NOT NULL,                          -- fecha de nacimiento
   `empresa`                 VARCHAR(50) NULL,                       -- empresa para la que trabaja (NULL = particular)
   `ultima_actualizacion`    DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
@@ -173,7 +173,7 @@ CREATE TABLE `licencia_venta` (
   `clave`                   INT UNSIGNED NOT NULL,  -- clave primaria: licencia vendida
   `propietario`             INT UNSIGNED NOT NULL,  -- cliente
   `fecha_expiracion`        DATETIME NOT NULL,      -- fecha de expiración
-  `precio`                  DECIMAL(4,2) NOT NULL DEFAULT '500,99',  -- precio de venta
+  `precio`                  DECIMAL(6,2) NOT NULL   -- precio de venta
   `ultima_actualizacion`    DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   
   PRIMARY KEY (`clave`),
