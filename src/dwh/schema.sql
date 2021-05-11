@@ -57,15 +57,18 @@ CREATE TABLE `dim_cliente` (
   `cliente_telefono`          VARCHAR(12) DEFAULT NULL,                         -- teléfono de contacto
   `cliente_nombre`            VARCHAR(45) DEFAULT NULL,                         -- nombre del comprador
   `cliente_primer_apellido`   VARCHAR(30) DEFAULT NULL,                         -- primer apellido
-  `cliente_genero`            CHAR(1) DEFAULT 'O',                              -- género
+  `cliente_genero`            VARCHAR(6) DEFAULT 'OTRO',                        -- género
   `cliente_fecha_nacimiento`  DATE DEFAULT NULL,                                -- fecha de nacimiento
-  `cliente_empresa`           VARCHAR(50) DEFAULT NULL,                         -- empresa para la que trabaja (NULL = particular)
-  
+  `cliente_empresa`           VARCHAR(150) DEFAULT NULL,                        -- empresa para la que trabaja (NULL = particular)
+  -- fuente externa
+  `cliente_empresa_sector`    VARCHAR(200) DEFAULT NULL,                        -- sector en el que trabaja
+  `cliente_empresa_actividad` VARCHAR(200) DEFAULT NULL,                        -- actividad de la empresa en el que trabaja
+  -- calculados
   `cliente_edad`              TINYINT(3) DEFAULT NULL,                          -- edad calculada del cliente
   `cliente_activo`            BOOLEAN DEFAULT FALSE,                            -- cliente con licencias activas
 
   PRIMARY KEY (`cliente_bigkey`),
   KEY `cliente_ID` (`cliente_ID`) USING BTREE,
   CONSTRAINT `chk_dim_cliente_genero`
-    CHECK (`cliente_genero` IN ('H', 'M', 'O'))
+    CHECK (`cliente_genero` IN ('HOMBRE', 'MUJER', 'OTRO'))
 )ENGINE = InnoDB;
