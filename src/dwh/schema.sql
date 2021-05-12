@@ -91,7 +91,7 @@ CREATE TABLE `dim_empleado` (
   `empleado_puesto`               VARCHAR(50) DEFAULT NULL,                         -- puesto / equipo
   `empleado_salario`              INT UNSIGNED DEFAULT NULL,                        -- salario
   -- calculados
-  `empleadp_edad`                 TINYINT(3) DEFAULT NULL,                          -- edad
+  `empleado_edad`                 TINYINT(3) DEFAULT NULL,                          -- edad
 
   PRIMARY KEY (`empleado_bigkey`),
   KEY `empleado_ID` (`empleado_ID`) USING BTREE,
@@ -119,12 +119,11 @@ CREATE TABLE `dim_programa` (
   `programa_nombre`               VARCHAR(45) DEFAULT NULL,                         -- Nombre del programa
   `programa_nombre_proyecto`      VARCHAR(150) DEFAULT NULL,                        -- Nombre del proyecto
   `programa_versiones`            INTEGER DEFAULT 0,                                -- Número de versiones de programa
-  `programa_proyecto_inicio`      DATE DEFAULT NULL,                                -- final del proyecto
-  `programa_proyecto_final`       DATE DEFAULT NULL,                                -- final del proyecto
   `programa_proyecto_presupuesto` DECIMAL(9,2) DEFAULT NULL,                        -- presupuesto del proyecto
   -- fuente externa
   `programa_valoraciones`         TINYINT(1) DEFAULT NULL,                          -- valoración media en la Play Store
   -- calculados
+  `programa_proyecto_tiempo`      INTEGER DEFAULT NULL,                             -- tiempo que llevó el desarrollo
   `programa_proyecto_jefe`        VARCHAR(150) DEFAULT NULL,                        -- jefe de proyecto
   `programa_proyecto_jefe_exp`    TINYINT(3) DEFAULT NULL,                          -- años de experiencia del jefe de proyecto
 
