@@ -8,13 +8,13 @@
 - [x] Schema: Base de datos
 - [ ] Data: Base de datos (falta `ticket`)
 - [x] Dataset: Empresa > Sector / Actividad
-- [ ] Dataset: Programa > Feedback / Review (revisar)
+- [x] Dataset: Programa > Valoraciones
 - [ ] Schema: Data WareHouse
 - [ ] Transformaciones
     - [x] DIM_tiempo
     - [x] DIM_cliente
     - [ ] DIM_empleado
-    - [ ] DIM_programa
-- [ ] Trabajos
+    - [x] DIM_programa
+- [x] Trabajo
 - [ ] Ajustar memoria a los Schema y DIMs actuales
 - [ ] Ajustar los DIMs actuales a la memoria

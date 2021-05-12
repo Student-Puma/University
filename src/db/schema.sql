@@ -100,7 +100,7 @@ CREATE TABLE `proyecto` (
 */
 CREATE TABLE `programa` (
   `ID`                      INT UNSIGNED NOT NULL AUTO_INCREMENT,   -- clave primaria
-  `nombre`                  VARCHAR(45) NOT NULL UNIQUE,            -- nombre del programa
+  `nombre`                  VARCHAR(150) NOT NULL UNIQUE,           -- nombre del programa
   `proyecto`                INT UNSIGNED NOT NULL,                  -- proyecto del que salió
   `ultima_actualizacion`    DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 
@@ -173,7 +173,7 @@ CREATE TABLE `licencia_venta` (
   `clave`                   INT UNSIGNED NOT NULL,  -- clave primaria: licencia vendida
   `propietario`             INT UNSIGNED NOT NULL,  -- cliente
   `fecha_expiracion`        DATETIME NOT NULL,      -- fecha de expiración
-  `precio`                  DECIMAL(6,2) NOT NULL   -- precio de venta
+  `precio`                  DECIMAL(6,2) NOT NULL,  -- precio de venta
   `ultima_actualizacion`    DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   
   PRIMARY KEY (`clave`),
