@@ -68,6 +68,37 @@ CREATE TABLE `dim_cliente` (
   CONSTRAINT `chk_dim_cliente_genero`
     CHECK (`cliente_genero` IN ('HOMBRE', 'MUJER', 'OTRO'))
 )ENGINE = InnoDB;
+CREATE INDEX idx_dim_cliente_lookup ON dim_cliente(cliente_ID);
+CREATE INDEX idx_dim_cliente_tk ON dim_cliente(cliente_bigkey);
+
+/*
+    @table: dim_empleado
+    @primary: empleado_bigkey
+    @description: Dimensión empleado
+*/
+CREATE TABLE `dim_empleado` (
+  `empleado_bigkey`               INT UNSIGNED NOT NULL AUTO_INCREMENT,             -- clave primaria del DWH
+  `empleado_last_update`          DATETIME NOT NULL DEFAULT '1970-01-01 00:00:00',  -- última carga de datos
+  `empleado_version`              SMALLINT(5) DEFAULT NULL,                         -- versionado
+  `empleado_valid_from`           DATE DEFAULT NULL,                                -- versionado (inicio)
+  `empleado_valid_to`             DATE DEFAULT NULL,                                -- versionado (final)
+
+  `empleado_ID`                   INT UNSIGNED DEFAULT NULL,                        -- ID del empleado
+  `empleado_nombre`               VARCHAR(200) DEFAULT NULL,                        -- nombre del empleado
+  `empleado_genero`               VARCHAR(6) DEFAULT 'OTRO',                        -- género
+  `empleado_fecha_nacimiento`     DATE DEFAULT NULL,                                -- fecha de nacimiento
+  `empleado_puesto`               VARCHAR(50) DEFAULT NULL,                         -- puesto / equipo
+  `empleado_salario`              INT UNSIGNED DEFAULT NULL,                        -- salario
+  -- calculados
+  `empleadp_edad`                 TINYINT(3) DEFAULT NULL,                          -- edad
+
+  PRIMARY KEY (`empleado_bigkey`),
+  KEY `empleado_ID` (`empleado_ID`) USING BTREE,
+  CONSTRAINT `chk_dim_empleado_genero`
+    CHECK (`empleado_genero` IN ('HOMBRE', 'MUJER', 'OTRO'))
+)ENGINE = InnoDB;
+CREATE INDEX idx_dim_empleado_lookup ON dim_empleado(empleado_ID);
+CREATE INDEX idx_dim_empleado_tk ON dim_empleado(empleado_bigkey);
 
 /*
     @table: dim_programa
@@ -103,3 +134,6 @@ CREATE TABLE `dim_programa` (
   CONSTRAINT `chk_dim_programa_valoraciones`
     CHECK(`programa_valoraciones` >= 0 AND `programa_valoraciones` <= 5)
 )ENGINE = InnoDB;
+CREATE INDEX idx_dim_programa_lookup ON dim_programa(programa_ID);
+CREATE INDEX idx_dim_programa_proy_lookup ON dim_programa(programa_proyecto);
+CREATE INDEX idx_dim_programa_tk ON dim_programa(programa_bigkey);

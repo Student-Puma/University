@@ -430,7 +430,7 @@
     <created_date>2021/05/11 14:55:21.272</created_date>
     <modified_user>-</modified_user>
     <modified_date>2021/05/11 14:55:21.272</modified_date>
-    <key_for_session_key/>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
@@ -621,8 +621,8 @@ entrada</note>
     </GUI>
   </step>
   <step>
-    <name>Salida</name>
-    <type>MappingOutput</type>
+    <name>Experiencia</name>
+    <type>Mapping</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -631,6 +631,44 @@ entrada</note>
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <specification_method>filename</specification_method>
+    <trans_object_id/>
+    <trans_name/>
+    <filename>${Internal.Entry.Current.Directory}/AUX_tiempo.ktr</filename>
+    <directory_path/>
+    <mappings>
+      <input>
+        <mapping>
+          <input_step/>
+          <output_step/>
+          <main_path>Y</main_path>
+          <rename_on_output>Y</rename_on_output>
+          <description/>
+          <connector>
+            <parent>fecha_incorporacion</parent>
+            <child>input</child>
+          </connector>
+        </mapping>
+      </input>
+      <output>
+        <mapping>
+          <input_step/>
+          <output_step/>
+          <main_path>Y</main_path>
+          <rename_on_output>N</rename_on_output>
+          <description/>
+          <connector>
+            <parent>años</parent>
+            <child>experiencia</child>
+          </connector>
+        </mapping>
+      </output>
+      <parameters>
+        <inherit_all_vars>Y</inherit_all_vars>
+      </parameters>
+    </mappings>
+    <allow_multiple_input>Y</allow_multiple_input>
+    <allow_multiple_output>Y</allow_multiple_output>
     <attributes/>
     <cluster_schema/>
     <remotesteps>
@@ -640,8 +678,8 @@ entrada</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>400</xloc>
-      <yloc>176</yloc>
+      <xloc>192</xloc>
+      <yloc>96</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -678,6 +716,46 @@ entrada</note>
     </remotesteps>
     <GUI>
       <xloc>336</xloc>
+      <yloc>176</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Formalizar</name>
+    <type>StringOperations</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>nombre</in_stream_name>
+        <out_stream_name/>
+        <trim_type/>
+        <lower_upper>upper</lower_upper>
+        <padding_type/>
+        <pad_char/>
+        <pad_len/>
+        <init_cap/>
+        <mask_xml/>
+        <digits/>
+        <remove_special_characters/>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>272</xloc>
       <yloc>176</yloc>
       <draw>Y</draw>
     </GUI>
@@ -829,8 +907,8 @@ entrada</note>
     </GUI>
   </step>
   <step>
-    <name>Formalizar</name>
-    <type>StringOperations</type>
+    <name>Salida</name>
+    <type>MappingOutput</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -839,21 +917,6 @@ entrada</note>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <fields>
-      <field>
-        <in_stream_name>nombre</in_stream_name>
-        <out_stream_name/>
-        <trim_type/>
-        <lower_upper>upper</lower_upper>
-        <padding_type/>
-        <pad_char/>
-        <pad_len/>
-        <init_cap/>
-        <mask_xml/>
-        <digits/>
-        <remove_special_characters/>
-      </field>
-    </fields>
     <attributes/>
     <cluster_schema/>
     <remotesteps>
@@ -863,71 +926,8 @@ entrada</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>272</xloc>
+      <xloc>400</xloc>
       <yloc>176</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Experiencia</name>
-    <type>Mapping</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <specification_method>filename</specification_method>
-    <trans_object_id/>
-    <trans_name/>
-    <filename>${Internal.Entry.Current.Directory}/AUX_tiempo.ktr</filename>
-    <directory_path/>
-    <mappings>
-      <input>
-        <mapping>
-          <input_step/>
-          <output_step/>
-          <main_path>Y</main_path>
-          <rename_on_output>Y</rename_on_output>
-          <description/>
-          <connector>
-            <parent>fecha_incorporacion</parent>
-            <child>input</child>
-          </connector>
-        </mapping>
-      </input>
-      <output>
-        <mapping>
-          <input_step/>
-          <output_step/>
-          <main_path>Y</main_path>
-          <rename_on_output>N</rename_on_output>
-          <description/>
-          <connector>
-            <parent>años</parent>
-            <child>experiencia</child>
-          </connector>
-        </mapping>
-      </output>
-      <parameters>
-        <inherit_all_vars>Y</inherit_all_vars>
-      </parameters>
-    </mappings>
-    <allow_multiple_input>Y</allow_multiple_input>
-    <allow_multiple_output>Y</allow_multiple_output>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>192</xloc>
-      <yloc>96</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
