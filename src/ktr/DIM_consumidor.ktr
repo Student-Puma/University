@@ -500,7 +500,7 @@
     </notepad>
     <notepad>
       <note>Subida</note>
-      <xloc>976</xloc>
+      <xloc>992</xloc>
       <yloc>272</yloc>
       <width>56</width>
       <heigth>27</heigth>
@@ -563,7 +563,7 @@
     </notepad>
     <notepad>
       <note>Limpieza</note>
-      <xloc>816</xloc>
+      <xloc>832</xloc>
       <yloc>272</yloc>
       <width>71</width>
       <heigth>27</heigth>
@@ -784,18 +784,20 @@
     <connection>TAMI</connection>
     <sql>SELECT
   ID
-, DNI
-, email
-, telefono
 , nombre
 , primer_apellido
 , genero
 , fecha_nacimiento
 , empresa
-, ultima_actualizacion
-FROM cliente
-WHERE ultima_actualizacion > ?
-</sql>
+, C.ultima_actualizacion AS ultima_actualizacion
+, COUNT(clave) AS licencias_compradas
+, SUM(precio) AS dinero_gastado
+FROM
+  cliente C
+, licencia_venta
+WHERE ID = propietario
+GROUP BY propietario
+HAVING ultima_actualizacion > ?</sql>
     <limit>0</limit>
     <lookup>Dateline</lookup>
     <execute_each_row>N</execute_each_row>
@@ -812,75 +814,6 @@ WHERE ultima_actualizacion > ?
         <origin>Clientes</origin>
         <comments>ID</comments>
         <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_ES</date_format_locale>
-        <date_format_timezone>America/Los_Angeles</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>DNI</name>
-        <length>9</length>
-        <precision>-1</precision>
-        <origin>Clientes</origin>
-        <comments>DNI</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_ES</date_format_locale>
-        <date_format_timezone>America/Los_Angeles</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>email</name>
-        <length>60</length>
-        <precision>-1</precision>
-        <origin>Clientes</origin>
-        <comments>email</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_ES</date_format_locale>
-        <date_format_timezone>America/Los_Angeles</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>telefono</name>
-        <length>12</length>
-        <precision>-1</precision>
-        <origin>Clientes</origin>
-        <comments>telefono</comments>
-        <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
         <currency_symbol/>
@@ -945,7 +878,7 @@ WHERE ultima_actualizacion > ?
         <type>String</type>
         <storagetype>normal</storagetype>
         <name>genero</name>
-        <length>1</length>
+        <length>6</length>
         <precision>-1</precision>
         <origin>Clientes</origin>
         <comments>genero</comments>
@@ -1033,6 +966,52 @@ WHERE ultima_actualizacion > ?
         <date_format_timezone>America/Los_Angeles</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>licencias_compradas</name>
+        <length>15</length>
+        <precision>0</precision>
+        <origin>Clientes</origin>
+        <comments>licencias_compradas</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_ES</date_format_locale>
+        <date_format_timezone>America/Los_Angeles</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>dinero_gastado</name>
+        <length>28</length>
+        <precision>2</precision>
+        <origin>Clientes</origin>
+        <comments>dinero_gastado</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_ES</date_format_locale>
+        <date_format_timezone>America/Los_Angeles</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
     </row-meta>
     <attributes/>
     <cluster_schema/>
@@ -1043,7 +1022,7 @@ WHERE ultima_actualizacion > ?
       </output>
     </remotesteps>
     <GUI>
-      <xloc>160</xloc>
+      <xloc>144</xloc>
       <yloc>128</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1109,6 +1088,21 @@ WHERE ultima_actualizacion > ?
         <lookup>cliente_empresa_actividad</lookup>
         <update>Insert</update>
       </field>
+      <field>
+        <name>genero</name>
+        <lookup>cliente_genero</lookup>
+        <update>Insert</update>
+      </field>
+      <field>
+        <name>licencias_compradas</name>
+        <lookup>cliente_compras</lookup>
+        <update>Insert</update>
+      </field>
+      <field>
+        <name>dinero_gastado</name>
+        <lookup>cliente_dinero</lookup>
+        <update>Insert</update>
+      </field>
       <return>
         <name>cliente_bigkey</name>
         <rename/>
@@ -1135,7 +1129,7 @@ WHERE ultima_actualizacion > ?
       </output>
     </remotesteps>
     <GUI>
-      <xloc>992</xloc>
+      <xloc>1008</xloc>
       <yloc>208</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1677,7 +1671,7 @@ FROM dim_cliente
       </output>
     </remotesteps>
     <GUI>
-      <xloc>496</xloc>
+      <xloc>512</xloc>
       <yloc>48</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1718,7 +1712,7 @@ FROM dim_cliente
       </output>
     </remotesteps>
     <GUI>
-      <xloc>656</xloc>
+      <xloc>672</xloc>
       <yloc>48</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1735,19 +1729,6 @@ FROM dim_cliente
       <schema_name/>
     </partitioning>
     <fields>
-      <field>
-        <in_stream_name>DNI</in_stream_name>
-        <out_stream_name/>
-        <trim_type/>
-        <lower_upper>upper</lower_upper>
-        <padding_type/>
-        <pad_char/>
-        <pad_len/>
-        <init_cap/>
-        <mask_xml/>
-        <digits/>
-        <remove_special_characters/>
-      </field>
       <field>
         <in_stream_name>nombre_completo</in_stream_name>
         <out_stream_name/>
@@ -1774,19 +1755,6 @@ FROM dim_cliente
         <digits/>
         <remove_special_characters/>
       </field>
-      <field>
-        <in_stream_name>email</in_stream_name>
-        <out_stream_name/>
-        <trim_type/>
-        <lower_upper>lower</lower_upper>
-        <padding_type/>
-        <pad_char/>
-        <pad_len/>
-        <init_cap/>
-        <mask_xml/>
-        <digits/>
-        <remove_special_characters/>
-      </field>
     </fields>
     <attributes/>
     <cluster_schema/>
@@ -1797,7 +1765,7 @@ FROM dim_cliente
       </output>
     </remotesteps>
     <GUI>
-      <xloc>352</xloc>
+      <xloc>368</xloc>
       <yloc>48</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1827,6 +1795,26 @@ FROM dim_cliente
       <remove>
         <name>primer_apellido</name>
       </remove>
+      <remove>
+        <name>dias</name>
+      </remove>
+      <meta>
+        <name>licencias_compradas</name>
+        <rename>licencias_compradas</rename>
+        <type>Integer</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
     </fields>
     <attributes/>
     <cluster_schema/>
@@ -1837,7 +1825,7 @@ FROM dim_cliente
       </output>
     </remotesteps>
     <GUI>
-      <xloc>880</xloc>
+      <xloc>896</xloc>
       <yloc>208</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1879,7 +1867,7 @@ FROM dim_cliente
       </output>
     </remotesteps>
     <GUI>
-      <xloc>656</xloc>
+      <xloc>672</xloc>
       <yloc>304</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1921,7 +1909,7 @@ FROM dim_cliente
       </output>
     </remotesteps>
     <GUI>
-      <xloc>656</xloc>
+      <xloc>672</xloc>
       <yloc>128</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1955,7 +1943,7 @@ FROM dim_cliente
       </output>
     </remotesteps>
     <GUI>
-      <xloc>656</xloc>
+      <xloc>672</xloc>
       <yloc>208</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1995,7 +1983,7 @@ FROM dim_cliente
       </output>
     </remotesteps>
     <GUI>
-      <xloc>784</xloc>
+      <xloc>800</xloc>
       <yloc>208</yloc>
       <draw>Y</draw>
     </GUI>

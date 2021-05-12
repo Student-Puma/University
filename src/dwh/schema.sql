@@ -61,7 +61,8 @@ CREATE TABLE `dim_cliente` (
   `cliente_empresa_actividad` VARCHAR(200) DEFAULT NULL,                        -- actividad de la empresa en el que trabaja
   -- calculados
   `cliente_edad`              TINYINT(3) DEFAULT NULL,                          -- edad calculada del cliente
-  `cliente_activo`            BOOLEAN DEFAULT FALSE,                            -- cliente con licencias activas
+  `cliente_compras`           INTEGER DEFAULT 0,                                -- cantidad de licencias compradas
+  `cliente_dinero`            DOUBLE DEFAULT 0,                           -- cantidad de dinero gastado
 
   PRIMARY KEY (`cliente_bigkey`),
   KEY `cliente_ID` (`cliente_ID`) USING BTREE,
