@@ -17,7 +17,7 @@ USE `dwh`;
 */
 CREATE TABLE `dim_tiempo` (
   `tiempo_bigkey`                 INT UNSIGNED NOT NULL AUTO_INCREMENT, -- clave primaria del DWH
-  `fecha`                         DATE DEFAULT NULL,                    -- fecha completa
+  `fecha`                         DATE DEFAULT NULL,                    -- fecha completa (ID)
   `anho`                          SMALLINT(4) DEFAULT NULL,             -- año
   `mes`                           TINYINT(2) DEFAULT NULL,              -- mes
   `dia`                           TINYINT(2) DEFAULT NULL,              -- dia
@@ -62,7 +62,7 @@ CREATE TABLE `dim_cliente` (
   -- calculados
   `cliente_edad`              TINYINT(3) DEFAULT NULL,                          -- edad calculada del cliente
   `cliente_compras`           INTEGER DEFAULT 0,                                -- cantidad de licencias compradas
-  `cliente_dinero`            DOUBLE DEFAULT 0,                           -- cantidad de dinero gastado
+  `cliente_dinero`            DOUBLE DEFAULT 0,                                 -- cantidad de dinero gastado
 
   PRIMARY KEY (`cliente_bigkey`),
   KEY `cliente_ID` (`cliente_ID`) USING BTREE,
@@ -137,3 +137,34 @@ CREATE TABLE `dim_programa` (
 CREATE INDEX idx_dim_programa_lookup ON dim_programa(programa_ID);
 CREATE INDEX idx_dim_programa_proy_lookup ON dim_programa(programa_proyecto);
 CREATE INDEX idx_dim_programa_tk ON dim_programa(programa_bigkey);
+
+/*
+    @table: fact_ventas
+    @primary: ventas_bigkey
+    @description: Tabla de hechos
+*/
+CREATE TABLE `fact_venta` (
+  `venta_bigkey`              INT UNSIGNED NOT NULL AUTO_INCREMENT,             -- clave primaria del DWH
+  `venta_last_update`         DATETIME NOT NULL DEFAULT '1970-01-01 00:00:00',  -- última carga de datos
+  `venta_version`             SMALLINT(5) DEFAULT NULL,                         -- versionado
+  `venta_valid_from`          DATE DEFAULT NULL,                                -- versionado (inicio)
+  `venta_valid_to`            DATE DEFAULT NULL,                                -- versionado (final)
+
+  `venta_ID`                  INT UNSIGNED DEFAULT NULL,                        -- ID de la venta
+  `venta_tiempo`              DATETIME DEFAULT NULL,                                -- ID del tiempo
+  `venta_cliente`             INT UNSIGNED DEFAULT NULL,                        -- ID del cliente
+  `venta_programa`            INT UNSIGNED DEFAULT NULL,                        -- ID de la programa
+  `venta_empleado`            INT UNSIGNED DEFAULT NULL,                        -- ID del empleado jefe de ese proyecto
+  -- calculados
+  `venta_importe`             DOUBLE DEFAULT NULL,                              -- importe percibido por la venta
+  `venta_expiracion`          DATETIME DEFAULT NULL,                            -- fecha de expiración
+
+  PRIMARY KEY (`venta_bigkey`),
+  KEY `venta_ID` (`venta_ID`) USING BTREE,
+  KEY `venta_tiempo` (`venta_tiempo`) USING BTREE,
+  KEY `venta_cliente` (`venta_cliente`) USING BTREE,
+  KEY `venta_programa` (`venta_programa`) USING BTREE,
+  KEY `venta_empleado` (`venta_empleado`) USING BTREE
+)ENGINE = InnoDB;
+CREATE INDEX idx_dim_venta_lookup ON fact_venta(venta_ID);
+CREATE INDEX idx_dim_venta_tk ON fact_venta(venta_bigkey);

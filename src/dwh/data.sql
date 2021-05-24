@@ -1,4 +1,10 @@
-use `tami`;
+-- MySQL dump 10.13  Distrib 8.0.25, for Linux (x86_64)
+--
+-- Host: localhost    Database: dwh
+-- ------------------------------------------------------
+-- Server version	8.0.25-0ubuntu0.20.04.1
+
+use dwh;
 
 -- dim_cliente
 
