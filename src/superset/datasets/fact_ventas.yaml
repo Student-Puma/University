@@ -1,0 +1,38 @@
+- columns:
+  - column_name: venta_last_update
+    is_dttm: true
+    type: DATETIME
+  - column_name: venta_expiracion
+    is_dttm: true
+    type: DATETIME
+  - column_name: venta_tiempo
+    is_dttm: true
+    type: DATETIME
+  - column_name: venta_valid_from
+    is_dttm: true
+    type: DATE
+  - column_name: venta_valid_to
+    is_dttm: true
+    type: DATE
+  - column_name: venta_ID
+    type: INTEGER UNSIGNED
+  - column_name: venta_programa
+    type: INTEGER UNSIGNED
+  - column_name: venta_empleado
+    type: INTEGER UNSIGNED
+  - column_name: venta_bigkey
+    type: INTEGER UNSIGNED
+  - column_name: venta_cliente
+    type: INTEGER UNSIGNED
+  - column_name: venta_version
+    type: SMALLINT
+  - column_name: venta_importe
+    type: DOUBLE
+  main_dttm_col: venta_last_update
+  metrics:
+  - expression: COUNT(*)
+    metric_name: count
+    metric_type: count
+    verbose_name: COUNT(*)
+  schema: dwh
+  table_name: fact_venta

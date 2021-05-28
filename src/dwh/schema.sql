@@ -59,6 +59,8 @@ CREATE TABLE `dim_cliente` (
   -- fuente externa
   `cliente_empresa_sector`    VARCHAR(200) DEFAULT NULL,                        -- sector en el que trabaja
   `cliente_empresa_actividad` VARCHAR(200) DEFAULT NULL,                        -- actividad de la empresa en el que trabaja
+  `cliente_lat`               DOUBLE DEFAULT NULL,                              -- latitud de la empresa
+  `cliente_lon`               DOUBLE DEFAULT NULL,                              -- longitud de la empresa
   -- calculados
   `cliente_edad`              TINYINT(3) DEFAULT NULL,                          -- edad calculada del cliente
   `cliente_compras`           INTEGER DEFAULT 0,                                -- cantidad de licencias compradas

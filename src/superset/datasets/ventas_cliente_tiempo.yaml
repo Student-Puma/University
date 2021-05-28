@@ -1,0 +1,47 @@
+- columns:
+  - column_name: venta_tiempo
+    is_dttm: true
+    type: DATETIME
+  - column_name: cliente_lat
+    type: FLOAT
+  - column_name: cliente_dinero
+    type: FLOAT
+  - column_name: cliente_lon
+    type: FLOAT
+  - column_name: cliente_empresa_actividad
+    type: STRING
+  - column_name: cliente_empresa_sector
+    type: STRING
+  - column_name: dia_semana
+    type: STRING
+  - column_name: cliente_empresa
+    type: STRING
+  - column_name: cliente_nombre
+    type: STRING
+  - column_name: cliente_genero
+    type: STRING
+  - column_name: laboral
+    type: STRING
+  - column_name: cliente_compras
+    type: INT
+  - column_name: cliente_edad
+    type: INT
+  - column_name: dia
+    type: INT
+  - column_name: anho
+    type: INT
+  - column_name: trimestre
+    type: INT
+  - column_name: mes
+    type: INT
+  metrics:
+  - expression: count(*)
+    metric_name: count
+  schema: dwh
+  sql: "SELECT\n  venta_tiempo,\n  cliente_nombre,\n  cliente_genero,\n  cliente_edad,\n\
+    \  cliente_empresa,\n  cliente_empresa_sector,\n  cliente_empresa_actividad,\n\
+    \  cliente_lat, cliente_lon,\n  cliente_compras,\n  cliente_dinero,\n  anho, mes,\
+    \ dia, dia_semana, trimestre, laboral\nFROM fact_venta\n  LEFT JOIN dim_cliente\
+    \ ON venta_cliente = cliente_ID\n  LEFT JOIN dim_tiempo ON venta_tiempo = fecha\n\
+    WHERE venta_tiempo"
+  table_name: venta/cliente/tiempo

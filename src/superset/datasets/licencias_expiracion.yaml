@@ -1,0 +1,16 @@
+- columns:
+  - column_name: venta_tiempo
+    is_dttm: true
+    type: DATETIME
+  - column_name: expirado
+    type: STRING
+  - column_name: venta_bigkey
+    type: INT
+  metrics:
+  - expression: count(*)
+    metric_name: count
+  schema: dwh
+  sql: "SELECT\r\n  venta_bigkey ,\r\n  venta_tiempo,\r\n  IF(venta_expiracion > NOW(),\
+    \ 'expirado', 'activo') AS expirado\r\nFROM fact_venta\r\nWHERE venta_expiracion\r\
+    \nORDER BY 3, 2, 1"
+  table_name: licencias/expiracion

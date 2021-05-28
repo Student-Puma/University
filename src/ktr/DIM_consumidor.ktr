@@ -791,7 +791,7 @@
 , empresa
 , C.ultima_actualizacion AS ultima_actualizacion
 , COUNT(clave) AS licencias_compradas
-, SUM(precio) AS dinero_gastado
+, FLOOR(SUM(precio)) AS dinero_gastado
 FROM
   cliente C
 , licencia_venta
@@ -993,8 +993,8 @@ HAVING ultima_actualizacion > ?</sql>
         <type>BigNumber</type>
         <storagetype>normal</storagetype>
         <name>dinero_gastado</name>
-        <length>28</length>
-        <precision>2</precision>
+        <length>27</length>
+        <precision>0</precision>
         <origin>Clientes</origin>
         <comments>dinero_gastado</comments>
         <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
@@ -1054,13 +1054,8 @@ HAVING ultima_actualizacion > ?</sql>
         <to>cliente_valid_to</to>
       </date>
       <field>
-        <name>ultima_actualizacion</name>
-        <lookup>cliente_last_update</lookup>
-        <update>Insert</update>
-      </field>
-      <field>
-        <name>nombre_completo</name>
-        <lookup>cliente_nombre</lookup>
+        <name>genero</name>
+        <lookup>cliente_genero</lookup>
         <update>Insert</update>
       </field>
       <field>
@@ -1069,13 +1064,33 @@ HAVING ultima_actualizacion > ?</sql>
         <update>Insert</update>
       </field>
       <field>
-        <name>empresa_nombre</name>
-        <lookup>cliente_empresa</lookup>
+        <name>ultima_actualizacion</name>
+        <lookup>cliente_last_update</lookup>
+        <update>Insert</update>
+      </field>
+      <field>
+        <name>cliente_compras</name>
+        <lookup>cliente_compras</lookup>
+        <update>Insert</update>
+      </field>
+      <field>
+        <name>dinero_gastado</name>
+        <lookup>cliente_dinero</lookup>
         <update>Insert</update>
       </field>
       <field>
         <name>edad</name>
         <lookup>cliente_edad</lookup>
+        <update>Insert</update>
+      </field>
+      <field>
+        <name>nombre_completo</name>
+        <lookup>cliente_nombre</lookup>
+        <update>Insert</update>
+      </field>
+      <field>
+        <name>empresa_nombre</name>
+        <lookup>cliente_empresa</lookup>
         <update>Insert</update>
       </field>
       <field>
@@ -1089,18 +1104,13 @@ HAVING ultima_actualizacion > ?</sql>
         <update>Insert</update>
       </field>
       <field>
-        <name>genero</name>
-        <lookup>cliente_genero</lookup>
+        <name>cliente_lat</name>
+        <lookup>cliente_lat</lookup>
         <update>Insert</update>
       </field>
       <field>
-        <name>licencias_compradas</name>
-        <lookup>cliente_compras</lookup>
-        <update>Insert</update>
-      </field>
-      <field>
-        <name>dinero_gastado</name>
-        <lookup>cliente_dinero</lookup>
+        <name>cliente_lon</name>
+        <lookup>cliente_lon</lookup>
         <update>Insert</update>
       </field>
       <return>
@@ -1114,7 +1124,7 @@ HAVING ultima_actualizacion > ?</sql>
     <sequence/>
     <min_year>1900</min_year>
     <max_year>2199</max_year>
-    <cache_size>5000</cache_size>
+    <cache_size>-1</cache_size>
     <preload_cache>N</preload_cache>
     <use_start_date_alternative>N</use_start_date_alternative>
     <start_date_alternative>none</start_date_alternative>
@@ -1275,10 +1285,10 @@ FROM dim_cliente
     <fields>
       <select_unspecified>N</select_unspecified>
       <remove>
-        <name>CP</name>
+        <name>contacto</name>
       </remove>
       <remove>
-        <name>contacto</name>
+        <name>código postal</name>
       </remove>
       <remove>
         <name>direccion</name>
@@ -1290,16 +1300,10 @@ FROM dim_cliente
         <name>fax</name>
       </remove>
       <remove>
-        <name>lat</name>
-      </remove>
-      <remove>
-        <name>lon</name>
-      </remove>
-      <remove>
         <name>sector</name>
       </remove>
       <remove>
-        <name>telefono</name>
+        <name>teléfono</name>
       </remove>
       <remove>
         <name>web</name>
@@ -1390,23 +1394,23 @@ FROM dim_cliente
     <include_filename>N</include_filename>
     <separator>,</separator>
     <enclosure>"</enclosure>
-    <header>N</header>
+    <header>Y</header>
     <buffer_size>50000</buffer_size>
     <lazy_conversion>Y</lazy_conversion>
     <add_filename_result>N</add_filename_result>
     <parallel>N</parallel>
     <newline_possible>N</newline_possible>
     <format>mixed</format>
-    <encoding/>
+    <encoding>UTF-8</encoding>
     <fields>
       <field>
         <name>empresa_nombre</name>
         <type>String</type>
         <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>46</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
@@ -1414,43 +1418,43 @@ FROM dim_cliente
         <name>direccion</name>
         <type>String</type>
         <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>71</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
       <field>
-        <name>CP</name>
+        <name>código postal</name>
         <type>Integer</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>5</length>
-        <precision>-1</precision>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
         <trim_type>none</trim_type>
       </field>
       <field>
         <name>zona</name>
         <type>String</type>
         <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>22</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
       <field>
-        <name>telefono</name>
+        <name>teléfono</name>
         <type>String</type>
         <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>45</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
@@ -1458,10 +1462,10 @@ FROM dim_cliente
         <name>fax</name>
         <type>String</type>
         <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>13</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
@@ -1469,10 +1473,10 @@ FROM dim_cliente
         <name>email</name>
         <type>String</type>
         <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>71</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
@@ -1480,10 +1484,10 @@ FROM dim_cliente
         <name>web</name>
         <type>String</type>
         <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>45</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
@@ -1491,31 +1495,20 @@ FROM dim_cliente
         <name>contacto</name>
         <type>String</type>
         <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>35</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
       <field>
         <name>sector</name>
-        <type>String</type>
+        <type>Boolean</type>
         <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>empresa_actividad</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -1524,33 +1517,44 @@ FROM dim_cliente
         <name>empresa_sector</name>
         <type>String</type>
         <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>104</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>empresa_actividad</name>
+        <type>String</type>
+        <format/>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>105</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
       <field>
         <name>lat</name>
         <type>Number</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
-        <precision>-1</precision>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
+        <precision>7</precision>
         <trim_type>none</trim_type>
       </field>
       <field>
         <name>lon</name>
         <type>Number</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
-        <precision>-1</precision>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>11</length>
+        <precision>8</precision>
         <trim_type>none</trim_type>
       </field>
     </fields>
@@ -1703,6 +1707,21 @@ FROM dim_cliente
       <grouping_symbol/>
       <currency_symbol/>
     </calculation>
+    <calculation>
+      <field_name>dinero_gastado</field_name>
+      <calc_type>FLOOR</calc_type>
+      <field_a>dinero_gastado</field_a>
+      <field_b/>
+      <field_c/>
+      <value_type>Integer</value_type>
+      <value_length>-1</value_length>
+      <value_precision>0</value_precision>
+      <remove>Y</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
     <attributes/>
     <cluster_schema/>
     <remotesteps>
@@ -1784,25 +1803,76 @@ FROM dim_cliente
     <fields>
       <select_unspecified>N</select_unspecified>
       <remove>
-        <name>empresa_ID</name>
+        <name>dias</name>
       </remove>
       <remove>
         <name>empresa</name>
       </remove>
       <remove>
-        <name>nombre</name>
+        <name>empresa_ID</name>
       </remove>
       <remove>
         <name>primer_apellido</name>
       </remove>
       <remove>
-        <name>dias</name>
+        <name>nombre</name>
       </remove>
       <meta>
         <name>licencias_compradas</name>
-        <rename>licencias_compradas</rename>
+        <rename>cliente_compras</rename>
         <type>Integer</type>
-        <length>-2</length>
+        <length>5</length>
+        <precision>0</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>lat</name>
+        <rename>cliente_lat</rename>
+        <type>Number</type>
+        <length>5</length>
+        <precision>3</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>lon</name>
+        <rename>cliente_lon</rename>
+        <type>Number</type>
+        <length>5</length>
+        <precision>3</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>dinero_gastado</name>
+        <rename>dinero_gastado</rename>
+        <type>Number</type>
+        <length>26</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -1825,8 +1895,94 @@ FROM dim_cliente
       </output>
     </remotesteps>
     <GUI>
-      <xloc>896</xloc>
+      <xloc>880</xloc>
       <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Nombre</name>
+    <type>ConcatFields</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <separator> </separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>N</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding/>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name/>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>nombre</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>primer_apellido</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <ConcatFields>
+      <targetFieldName>nombre_completo</targetFieldName>
+      <targetFieldLength>0</targetFieldLength>
+      <removeSelectedFields>N</removeSelectedFields>
+    </ConcatFields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>256</xloc>
+      <yloc>48</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1915,40 +2071,6 @@ FROM dim_cliente
     </GUI>
   </step>
   <step>
-    <name>Unión por empresa</name>
-    <type>MergeJoin</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <join_type>LEFT OUTER</join_type>
-    <step1>Ordenar por empresa</step1>
-    <step2>Ordenar</step2>
-    <keys_1>
-      <key>empresa</key>
-    </keys_1>
-    <keys_2>
-      <key>empresa_nombre</key>
-    </keys_2>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>672</xloc>
-      <yloc>208</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
     <name>Particulares</name>
     <type>IfNull</type>
     <description/>
@@ -1989,8 +2111,8 @@ FROM dim_cliente
     </GUI>
   </step>
   <step>
-    <name>Nombre</name>
-    <type>ConcatFields</type>
+    <name>Unión por empresa</name>
+    <type>MergeJoin</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -1999,67 +2121,15 @@ FROM dim_cliente
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <separator> </separator>
-    <enclosure>"</enclosure>
-    <enclosure_forced>N</enclosure_forced>
-    <enclosure_fix_disabled>N</enclosure_fix_disabled>
-    <header>N</header>
-    <footer>N</footer>
-    <format>DOS</format>
-    <compression>None</compression>
-    <encoding/>
-    <endedLine/>
-    <fileNameInField>N</fileNameInField>
-    <fileNameField/>
-    <create_parent_folder>Y</create_parent_folder>
-    <file>
-      <name/>
-      <servlet_output>N</servlet_output>
-      <do_not_open_new_file_init>N</do_not_open_new_file_init>
-      <extention>txt</extention>
-      <append>N</append>
-      <split>N</split>
-      <haspartno>N</haspartno>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <SpecifyFormat>N</SpecifyFormat>
-      <date_time_format/>
-      <add_to_result_filenames>Y</add_to_result_filenames>
-      <pad>N</pad>
-      <fast_dump>N</fast_dump>
-      <splitevery>0</splitevery>
-    </file>
-    <fields>
-      <field>
-        <name>nombre</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>primer_apellido</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-    </fields>
-    <ConcatFields>
-      <targetFieldName>nombre_completo</targetFieldName>
-      <targetFieldLength>0</targetFieldLength>
-      <removeSelectedFields>N</removeSelectedFields>
-    </ConcatFields>
+    <join_type>LEFT OUTER</join_type>
+    <step1>Ordenar por empresa</step1>
+    <step2>Ordenar</step2>
+    <keys_1>
+      <key>empresa</key>
+    </keys_1>
+    <keys_2>
+      <key>empresa_nombre</key>
+    </keys_2>
     <attributes/>
     <cluster_schema/>
     <remotesteps>
@@ -2069,8 +2139,8 @@ FROM dim_cliente
       </output>
     </remotesteps>
     <GUI>
-      <xloc>256</xloc>
-      <yloc>48</yloc>
+      <xloc>672</xloc>
+      <yloc>208</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
