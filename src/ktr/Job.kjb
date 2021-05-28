@@ -544,7 +544,7 @@
       <draw>Y</draw>
       <nr>0</nr>
       <xloc>400</xloc>
-      <yloc>400</yloc>
+      <yloc>416</yloc>
       <attributes_kjc/>
     </entry>
   </entries>
@@ -560,11 +560,11 @@
     </hop>
     <hop>
       <from>DIM_tiempo</from>
-      <to>DIM_cliente</to>
+      <to>Dummy Error</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
+      <evaluation>N</evaluation>
       <unconditional>N</unconditional>
     </hop>
     <hop>
@@ -577,39 +577,12 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>DIM_tiempo</from>
-      <to>Dummy Error</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>N</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>DIM_cliente</from>
-      <to>Dummy Error</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>N</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
       <from>DIM_programa</from>
       <to>Dummy Error</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
       <evaluation>N</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>DIM_programa</from>
-      <to>DIM_empleado</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
     </hop>
     <hop>
@@ -648,6 +621,24 @@
       <evaluation>N</evaluation>
       <unconditional>N</unconditional>
     </hop>
+    <hop>
+      <from>DIM_tiempo</from>
+      <to>DIM_cliente</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>DIM_programa</from>
+      <to>DIM_empleado</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
   </hops>
   <notepads>
     <notepad>
@@ -674,7 +665,7 @@
     <notepad>
       <note>Acciones</note>
       <xloc>384</xloc>
-      <yloc>320</yloc>
+      <yloc>144</yloc>
       <width>70</width>
       <heigth>27</heigth>
       <fontname>Ubuntu</fontname>

@@ -1,0 +1,37 @@
+- columns:
+  - column_name: empleado_last_update
+    is_dttm: true
+    type: DATETIME
+  - column_name: empleado_fecha_nacimiento
+    is_dttm: true
+    type: DATE
+  - column_name: empleado_valid_from
+    is_dttm: true
+    type: DATE
+  - column_name: empleado_valid_to
+    is_dttm: true
+    type: DATE
+  - column_name: empleado_ID
+    type: INTEGER UNSIGNED
+  - column_name: empleado_salario
+    type: INTEGER UNSIGNED
+  - column_name: empleado_bigkey
+    type: INTEGER UNSIGNED
+  - column_name: empleado_nombre
+    type: VARCHAR(200)
+  - column_name: empleado_puesto
+    type: VARCHAR(50)
+  - column_name: empleado_genero
+    type: VARCHAR(6)
+  - column_name: empleado_version
+    type: SMALLINT
+  - column_name: empleado_edad
+    type: TINYINT
+  main_dttm_col: empleado_last_update
+  metrics:
+  - expression: COUNT(*)
+    metric_name: count
+    metric_type: count
+    verbose_name: COUNT(*)
+  schema: dwh
+  table_name: dim_empleado

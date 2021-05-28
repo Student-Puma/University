@@ -1,0 +1,1760 @@
+{
+    "dashboards": [
+        {
+            "__Dashboard__": {
+                "css": "",
+                "dashboard_title": "Resumen ejecutivo",
+                "description": null,
+                "json_metadata": "{\"timed_refresh_immune_slices\": [], \"expanded_slices\": {}, \"refresh_frequency\": 0, \"default_filters\": \"{}\", \"color_scheme\": null, \"remote_id\": 1}",
+                "position_json": "{\"CHART-0oRGAfXMy-\":{\"children\":[],\"id\":\"CHART-0oRGAfXMy-\",\"meta\":{\"chartId\":19,\"height\":104,\"sliceName\":\"proyectos/presupuesto\",\"sliceNameOverride\":\"Programas seg\\u00fan presupuesto\",\"uuid\":\"023d6f8c-22a7-46e0-ac8a-dc1b4db23853\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-MenrwwCco\",\"ROW-EyvHj-2eBF\",\"COLUMN-dupsLfMzxh\"],\"type\":\"CHART\"},\"CHART-10hLAeC4xR\":{\"children\":[],\"id\":\"CHART-10hLAeC4xR\",\"meta\":{\"chartId\":9,\"height\":40,\"sliceName\":\"ventas/laboral\",\"sliceNameOverride\":\"Ventas seg\\u00fan festividad\",\"uuid\":\"70623935-78b1-4e69-9b9c-35a43087fac2\",\"width\":2},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-J5XqiVeAM\",\"ROW-R6g2euP1Dv\",\"COLUMN-SxF9WGKSSN\"],\"type\":\"CHART\"},\"CHART-5QXmzLmKgx\":{\"children\":[],\"id\":\"CHART-5QXmzLmKgx\",\"meta\":{\"chartId\":4,\"height\":50,\"sliceName\":\"licencias/estado\",\"sliceNameOverride\":\"Estado de las licencias\",\"uuid\":\"8126f394-8adf-41c6-a872-4e3d72dd66d1\",\"width\":3},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-MenrwwCco\",\"ROW-ZPIzx9_nnz\"],\"type\":\"CHART\"},\"CHART-8tEayHl5GZ\":{\"children\":[],\"id\":\"CHART-8tEayHl5GZ\",\"meta\":{\"chartId\":12,\"height\":23,\"sliceName\":\"ventas/timeline\",\"sliceNameOverride\":\"Ventas\",\"uuid\":\"9e4d8cff-2f00-4250-88ba-36a130a822f4\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-a9a8nFnRBL\",\"COLUMN-p4q16upFnY\"],\"type\":\"CHART\"},\"CHART-D4EQE_Yxtk\":{\"children\":[],\"id\":\"CHART-D4EQE_Yxtk\",\"meta\":{\"chartId\":17,\"height\":50,\"sliceName\":\"ventas/ingresos\",\"sliceNameOverride\":\"Ingresos\",\"uuid\":\"e0c6c728-54d1-4091-8848-372384ef6baa\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-AgYuE8la1s\",\"COLUMN-rfa1h9--Ra\"],\"type\":\"CHART\"},\"CHART-GK4pSEkhOb\":{\"children\":[],\"id\":\"CHART-GK4pSEkhOb\",\"meta\":{\"chartId\":22,\"height\":50,\"sliceName\":\"proyectos/experiencia\",\"sliceNameOverride\":\"Programas seg\\u00fan experiencia del jefe de proyecto\",\"uuid\":\"7486cc79-ab3f-41f5-b387-634348f42a35\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-MenrwwCco\",\"ROW-EyvHj-2eBF\",\"COLUMN-NeTABB6j4w\",\"ROW-AA3BeaIOuY\"],\"type\":\"CHART\"},\"CHART-GKx8-xXsDY\":{\"children\":[],\"id\":\"CHART-GKx8-xXsDY\",\"meta\":{\"chartId\":3,\"height\":50,\"sliceName\":\"ventas/totales\",\"sliceNameOverride\":\"Total\",\"uuid\":\"de36ee7d-9c73-4afd-aca2-bb90aefacb41\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-RjJzYwoSdW\"],\"type\":\"CHART\"},\"CHART-GWhu7tJDYd\":{\"children\":[],\"id\":\"CHART-GWhu7tJDYd\",\"meta\":{\"chartId\":10,\"height\":126,\"sliceName\":\"ventas/dia\",\"sliceNameOverride\":\"Ventas seg\\u00fan dia del a\\u00f1o\",\"uuid\":\"8103267f-dcc8-42fa-bba4-cd69c995ffc9\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-J5XqiVeAM\",\"ROW-R6g2euP1Dv\",\"COLUMN-_9SGUyJCkw\"],\"type\":\"CHART\"},\"CHART-LXs6FEtHDd\":{\"children\":[],\"id\":\"CHART-LXs6FEtHDd\",\"meta\":{\"chartId\":6,\"height\":50,\"sliceName\":\"ventas/empresa\",\"sliceNameOverride\":\"Ventas seg\\u00fan empresa\",\"uuid\":\"b4780212-cda7-4e1e-b5d1-4ef873cc1527\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-4dFfsm8S5U\",\"ROW-Wmoi6B-gkz\",\"COLUMN-RhlX1kXMl_\"],\"type\":\"CHART\"},\"CHART-R27Ew5LXd8\":{\"children\":[],\"id\":\"CHART-R27Ew5LXd8\",\"meta\":{\"chartId\":21,\"height\":50,\"sliceName\":\"proyectos/versiones\",\"sliceNameOverride\":\"Programas seg\\u00fan n\\u00famero de versiones\",\"uuid\":\"3ea8449a-69fb-4589-80eb-de65f2342bdc\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-MenrwwCco\",\"ROW-EyvHj-2eBF\",\"COLUMN-NeTABB6j4w\",\"ROW-n-67oY3jP1\"],\"type\":\"CHART\"},\"CHART-Rg7iNj-orW\":{\"children\":[],\"id\":\"CHART-Rg7iNj-orW\",\"meta\":{\"chartId\":16,\"height\":50,\"sliceName\":\"ventas/coste\",\"sliceNameOverride\":\"Gastos\",\"uuid\":\"a8943f13-32b2-4158-b2d7-8ce336a2358a\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-AgYuE8la1s\",\"COLUMN-F_Wc3sV8yX\"],\"type\":\"CHART\"},\"CHART-TS7mJ6w2CB\":{\"children\":[],\"id\":\"CHART-TS7mJ6w2CB\",\"meta\":{\"chartId\":13,\"height\":50,\"sliceName\":\"ventas/cliente\",\"sliceNameOverride\":\"Clientes seg\\u00fan ventas\",\"uuid\":\"4b317ea7-8553-4f03-88dd-9a673894d78c\",\"width\":3},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-4dFfsm8S5U\",\"ROW-gajCGYoLd9\",\"COLUMN-aF98gRdJPb\"],\"type\":\"CHART\"},\"CHART-cCFqotla1J\":{\"children\":[],\"id\":\"CHART-cCFqotla1J\",\"meta\":{\"chartId\":23,\"height\":50,\"sliceName\":\"empleado/puesto\",\"sliceNameOverride\":\"Empleados por sector\",\"uuid\":\"015d70ef-c314-400e-b7bc-d264314305a0\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-jJERc0sYS\",\"ROW-G2Ix4AX5Qq\",\"COLUMN-r5zK9NeKkX\",\"ROW-r97TFrKHEo\",\"COLUMN-CdrYmH_ZaT\"],\"type\":\"CHART\"},\"CHART-dMo4L11Krv\":{\"children\":[],\"id\":\"CHART-dMo4L11Krv\",\"meta\":{\"chartId\":15,\"height\":37,\"sliceName\":\"ventas/mes_anho\",\"sliceNameOverride\":\"Ventas seg\\u00fan mes del a\\u00f1o\",\"uuid\":\"f78e454e-2e1c-4234-a1b5-a7e0d2630aab\",\"width\":2},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-J5XqiVeAM\",\"ROW-R6g2euP1Dv\",\"COLUMN-SxF9WGKSSN\",\"ROW-0ry2OA4cNg\",\"COLUMN-LFpPFY2I8z\"],\"type\":\"CHART\"},\"CHART-dX-qPLe8Ta\":{\"children\":[],\"id\":\"CHART-dX-qPLe8Ta\",\"meta\":{\"chartId\":24,\"height\":55,\"sliceName\":\"empleado/edad+salario\",\"sliceNameOverride\":\"Empleados, edad y salario por g\\u00e9nero\",\"uuid\":\"b7aa650d-d5b5-4b5c-accc-39baa8bed3cf\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-jJERc0sYS\",\"ROW-G2Ix4AX5Qq\",\"COLUMN-r5zK9NeKkX\",\"ROW-r97TFrKHEo\",\"COLUMN-T7BOwRqc9A\"],\"type\":\"CHART\"},\"CHART-e20yESwKI8\":{\"children\":[],\"id\":\"CHART-e20yESwKI8\",\"meta\":{\"chartId\":8,\"height\":50,\"sliceName\":\"ventas/genero\",\"sliceNameOverride\":\"Clientes seg\\u00fan g\\u00e9nero\",\"uuid\":\"1bff317b-5528-4284-abb5-bf22052cd3ff\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-4dFfsm8S5U\",\"ROW-gajCGYoLd9\",\"COLUMN-y4S-2L2ov8\"],\"type\":\"CHART\"},\"CHART-giI0TkMk47\":{\"children\":[],\"id\":\"CHART-giI0TkMk47\",\"meta\":{\"chartId\":14,\"height\":37,\"sliceName\":\"ventas/dia_semana\",\"sliceNameOverride\":\"Ventas seg\\u00fan d\\u00eda de la semana\",\"uuid\":\"694aca66-70f7-481a-b86a-46e597366e4b\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-J5XqiVeAM\",\"ROW-R6g2euP1Dv\",\"COLUMN-SxF9WGKSSN\"],\"type\":\"CHART\"},\"CHART-lY3-yamAfL\":{\"children\":[],\"id\":\"CHART-lY3-yamAfL\",\"meta\":{\"chartId\":5,\"height\":50,\"sliceName\":\"ventas/edad\",\"sliceNameOverride\":\"Clientes y ventas seg\\u00fan edad\",\"uuid\":\"6aa949cf-6547-4cd3-ba55-9b4e1bdbd149\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-4dFfsm8S5U\",\"ROW-vluJwMtkcA\",\"COLUMN-wdKDvMLa-G\"],\"type\":\"CHART\"},\"CHART-tTn1NIq0NW\":{\"children\":[],\"id\":\"CHART-tTn1NIq0NW\",\"meta\":{\"chartId\":18,\"height\":48,\"sliceName\":\"proyectos\",\"sliceNameOverride\":\"Programas\",\"uuid\":\"9910567b-4208-4f98-b373-a6e6867f9bd9\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-MenrwwCco\",\"ROW-ZPIzx9_nnz\",\"COLUMN-7jVepSEDgG\"],\"type\":\"CHART\"},\"CHART-tjngViHahm\":{\"children\":[],\"id\":\"CHART-tjngViHahm\",\"meta\":{\"chartId\":1,\"height\":50,\"sliceName\":\"ventas/mes\",\"sliceNameOverride\":\"\\u00daltimas ventas\",\"uuid\":\"2b08a851-9bce-45ee-b31f-53dddc651841\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-RjJzYwoSdW\"],\"type\":\"CHART\"},\"CHART-yUDTZ8czRx\":{\"children\":[],\"id\":\"CHART-yUDTZ8czRx\",\"meta\":{\"chartId\":25,\"height\":50,\"sliceName\":\"empleados\",\"sliceNameOverride\":\"Empleados por salario y edad\",\"uuid\":\"f0e740da-6b31-4d97-9e83-6cca140e9b98\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-jJERc0sYS\",\"ROW-G2Ix4AX5Qq\",\"COLUMN-r5zK9NeKkX\"],\"type\":\"CHART\"},\"CHART-zk8fBJGJv1\":{\"children\":[],\"id\":\"CHART-zk8fBJGJv1\",\"meta\":{\"chartId\":7,\"height\":50,\"sliceName\":\"ventas/sector\",\"sliceNameOverride\":\"Ventas seg\\u00fan sector\",\"uuid\":\"0e49bf2e-9ac9-4c49-8474-91552675f45a\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-4dFfsm8S5U\",\"ROW-Wmoi6B-gkz\",\"COLUMN-_iWiygvDdb\"],\"type\":\"CHART\"},\"COLUMN-7jVepSEDgG\":{\"children\":[\"CHART-tTn1NIq0NW\"],\"id\":\"COLUMN-7jVepSEDgG\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"width\":9},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-MenrwwCco\",\"ROW-ZPIzx9_nnz\"],\"type\":\"COLUMN\"},\"COLUMN-CdbcFtf0pG\":{\"children\":[\"MARKDOWN-kVqDhRTp6x\"],\"id\":\"COLUMN-CdbcFtf0pG\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"width\":12},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-DgecPb8W46\"],\"type\":\"COLUMN\"},\"COLUMN-CdrYmH_ZaT\":{\"children\":[\"CHART-cCFqotla1J\"],\"id\":\"COLUMN-CdrYmH_ZaT\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"width\":5},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-jJERc0sYS\",\"ROW-G2Ix4AX5Qq\",\"COLUMN-r5zK9NeKkX\",\"ROW-r97TFrKHEo\"],\"type\":\"COLUMN\"},\"COLUMN-CjCIvdS7V0\":{\"children\":[\"HEADER-3DHDddAR9j\"],\"id\":\"COLUMN-CjCIvdS7V0\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"width\":12},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-4dFfsm8S5U\",\"ROW-OZ34238lPd\"],\"type\":\"COLUMN\"},\"COLUMN-F_Wc3sV8yX\":{\"children\":[\"CHART-Rg7iNj-orW\"],\"id\":\"COLUMN-F_Wc3sV8yX\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"width\":6},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-AgYuE8la1s\"],\"type\":\"COLUMN\"},\"COLUMN-LFpPFY2I8z\":{\"children\":[\"CHART-dMo4L11Krv\"],\"id\":\"COLUMN-LFpPFY2I8z\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"width\":6},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-J5XqiVeAM\",\"ROW-R6g2euP1Dv\",\"COLUMN-SxF9WGKSSN\",\"ROW-0ry2OA4cNg\"],\"type\":\"COLUMN\"},\"COLUMN-NeTABB6j4w\":{\"children\":[\"ROW-AA3BeaIOuY\",\"ROW-n-67oY3jP1\"],\"id\":\"COLUMN-NeTABB6j4w\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-MenrwwCco\",\"ROW-EyvHj-2eBF\"],\"type\":\"COLUMN\"},\"COLUMN-RhlX1kXMl_\":{\"children\":[\"CHART-LXs6FEtHDd\"],\"id\":\"COLUMN-RhlX1kXMl_\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"width\":7},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-4dFfsm8S5U\",\"ROW-Wmoi6B-gkz\"],\"type\":\"COLUMN\"},\"COLUMN-SxF9WGKSSN\":{\"children\":[\"CHART-10hLAeC4xR\",\"CHART-giI0TkMk47\",\"ROW-0ry2OA4cNg\"],\"id\":\"COLUMN-SxF9WGKSSN\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"width\":6},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-J5XqiVeAM\",\"ROW-R6g2euP1Dv\"],\"type\":\"COLUMN\"},\"COLUMN-T7BOwRqc9A\":{\"children\":[\"CHART-dX-qPLe8Ta\"],\"id\":\"COLUMN-T7BOwRqc9A\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"width\":7},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-jJERc0sYS\",\"ROW-G2Ix4AX5Qq\",\"COLUMN-r5zK9NeKkX\",\"ROW-r97TFrKHEo\"],\"type\":\"COLUMN\"},\"COLUMN-_9SGUyJCkw\":{\"children\":[\"CHART-GWhu7tJDYd\"],\"id\":\"COLUMN-_9SGUyJCkw\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"width\":6},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-J5XqiVeAM\",\"ROW-R6g2euP1Dv\"],\"type\":\"COLUMN\"},\"COLUMN-_iWiygvDdb\":{\"children\":[\"CHART-zk8fBJGJv1\"],\"id\":\"COLUMN-_iWiygvDdb\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"width\":5},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-4dFfsm8S5U\",\"ROW-Wmoi6B-gkz\"],\"type\":\"COLUMN\"},\"COLUMN-aF98gRdJPb\":{\"children\":[\"CHART-TS7mJ6w2CB\"],\"id\":\"COLUMN-aF98gRdJPb\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"width\":7},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-4dFfsm8S5U\",\"ROW-gajCGYoLd9\"],\"type\":\"COLUMN\"},\"COLUMN-dupsLfMzxh\":{\"children\":[\"CHART-0oRGAfXMy-\"],\"id\":\"COLUMN-dupsLfMzxh\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"width\":8},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-MenrwwCco\",\"ROW-EyvHj-2eBF\"],\"type\":\"COLUMN\"},\"COLUMN-eD1Pre5u69\":{\"children\":[],\"id\":\"COLUMN-eD1Pre5u69\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"width\":12},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-4dFfsm8S5U\",\"ROW-jPUujZt5nl\"],\"type\":\"COLUMN\"},\"COLUMN-p4q16upFnY\":{\"children\":[\"CHART-8tEayHl5GZ\"],\"id\":\"COLUMN-p4q16upFnY\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"width\":12},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-a9a8nFnRBL\"],\"type\":\"COLUMN\"},\"COLUMN-r5zK9NeKkX\":{\"children\":[\"ROW-r97TFrKHEo\",\"CHART-yUDTZ8czRx\"],\"id\":\"COLUMN-r5zK9NeKkX\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"width\":12},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-jJERc0sYS\",\"ROW-G2Ix4AX5Qq\"],\"type\":\"COLUMN\"},\"COLUMN-rfa1h9--Ra\":{\"children\":[\"CHART-D4EQE_Yxtk\"],\"id\":\"COLUMN-rfa1h9--Ra\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"width\":6},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-AgYuE8la1s\"],\"type\":\"COLUMN\"},\"COLUMN-uXDw3RzOTj\":{\"children\":[\"HEADER-bk7oXlHxPy\"],\"id\":\"COLUMN-uXDw3RzOTj\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"width\":12},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-4dFfsm8S5U\",\"ROW-QrY8SSd_gQ\"],\"type\":\"COLUMN\"},\"COLUMN-wdKDvMLa-G\":{\"children\":[\"CHART-lY3-yamAfL\"],\"id\":\"COLUMN-wdKDvMLa-G\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"width\":12},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-4dFfsm8S5U\",\"ROW-vluJwMtkcA\"],\"type\":\"COLUMN\"},\"COLUMN-y4S-2L2ov8\":{\"children\":[\"CHART-e20yESwKI8\"],\"id\":\"COLUMN-y4S-2L2ov8\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"width\":5},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-4dFfsm8S5U\",\"ROW-gajCGYoLd9\"],\"type\":\"COLUMN\"},\"DASHBOARD_VERSION_KEY\":\"v2\",\"DIVIDER-1sLVZsee2i\":{\"children\":[],\"id\":\"DIVIDER-1sLVZsee2i\",\"meta\":{},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-4dFfsm8S5U\"],\"type\":\"DIVIDER\"},\"DIVIDER-iEaJxay47H\":{\"children\":[],\"id\":\"DIVIDER-iEaJxay47H\",\"meta\":{},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"DIVIDER\"},\"GRID_ID\":{\"children\":[\"ROW-RjJzYwoSdW\",\"ROW-AgYuE8la1s\",\"ROW-a9a8nFnRBL\",\"DIVIDER-iEaJxay47H\",\"ROW-DgecPb8W46\",\"TABS-4xJCe0DFEz\"],\"id\":\"GRID_ID\",\"parents\":[\"ROOT_ID\"],\"type\":\"GRID\"},\"HEADER-3DHDddAR9j\":{\"children\":[],\"id\":\"HEADER-3DHDddAR9j\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"headerSize\":\"MEDIUM_HEADER\",\"text\":\"Estudio por empresa\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-4dFfsm8S5U\",\"ROW-OZ34238lPd\",\"COLUMN-CjCIvdS7V0\"],\"type\":\"HEADER\"},\"HEADER-bk7oXlHxPy\":{\"children\":[],\"id\":\"HEADER-bk7oXlHxPy\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"headerSize\":\"MEDIUM_HEADER\",\"text\":\"Estudio por persona\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-4dFfsm8S5U\",\"ROW-QrY8SSd_gQ\",\"COLUMN-uXDw3RzOTj\"],\"type\":\"HEADER\"},\"HEADER_ID\":{\"id\":\"HEADER_ID\",\"meta\":{\"text\":\"Resumen ejecutivo\"},\"type\":\"HEADER\"},\"MARKDOWN-31B9SF5-Rd\":{\"children\":[],\"id\":\"MARKDOWN-31B9SF5-Rd\",\"meta\":{\"code\":\"<h1 align=\\\"center\\\">\\n<br>\\n<img alt=\\\"Logo\\\" src=\\\"https://www.ticbusiness.es/wp-content/uploads/2018/02/tic-business-logo-header.png\\\" />\\n\\n<br/><br/>\\n<h2 align=\\\"center\\\">TAMI Dashboard: SOFTWARE</h2>\\n</h1>\",\"height\":50,\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-RjJzYwoSdW\"],\"type\":\"MARKDOWN\"},\"MARKDOWN-kVqDhRTp6x\":{\"children\":[],\"id\":\"MARKDOWN-kVqDhRTp6x\",\"meta\":{\"code\":\"<h1 align=\\\"center\\\" style=\\\"font-size: 40px\\\">Estudio de empresa y mercado</h1>\",\"height\":13,\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-DgecPb8W46\",\"COLUMN-CdbcFtf0pG\"],\"type\":\"MARKDOWN\"},\"ROOT_ID\":{\"children\":[\"GRID_ID\"],\"id\":\"ROOT_ID\",\"type\":\"ROOT\"},\"ROW-0ry2OA4cNg\":{\"children\":[\"COLUMN-LFpPFY2I8z\"],\"id\":\"ROW-0ry2OA4cNg\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-J5XqiVeAM\",\"ROW-R6g2euP1Dv\",\"COLUMN-SxF9WGKSSN\"],\"type\":\"ROW\"},\"ROW-AA3BeaIOuY\":{\"children\":[\"CHART-GK4pSEkhOb\"],\"id\":\"ROW-AA3BeaIOuY\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-MenrwwCco\",\"ROW-EyvHj-2eBF\",\"COLUMN-NeTABB6j4w\"],\"type\":\"ROW\"},\"ROW-AgYuE8la1s\":{\"children\":[\"COLUMN-rfa1h9--Ra\",\"COLUMN-F_Wc3sV8yX\"],\"id\":\"ROW-AgYuE8la1s\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"ROW\"},\"ROW-DgecPb8W46\":{\"children\":[\"COLUMN-CdbcFtf0pG\"],\"id\":\"ROW-DgecPb8W46\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"ROW\"},\"ROW-EyvHj-2eBF\":{\"children\":[\"COLUMN-dupsLfMzxh\",\"COLUMN-NeTABB6j4w\"],\"id\":\"ROW-EyvHj-2eBF\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-MenrwwCco\"],\"type\":\"ROW\"},\"ROW-G2Ix4AX5Qq\":{\"children\":[\"COLUMN-r5zK9NeKkX\"],\"id\":\"ROW-G2Ix4AX5Qq\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-jJERc0sYS\"],\"type\":\"ROW\"},\"ROW-OZ34238lPd\":{\"children\":[\"COLUMN-CjCIvdS7V0\"],\"id\":\"ROW-OZ34238lPd\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-4dFfsm8S5U\"],\"type\":\"ROW\"},\"ROW-QrY8SSd_gQ\":{\"children\":[\"COLUMN-uXDw3RzOTj\"],\"id\":\"ROW-QrY8SSd_gQ\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-4dFfsm8S5U\"],\"type\":\"ROW\"},\"ROW-R6g2euP1Dv\":{\"children\":[\"COLUMN-_9SGUyJCkw\",\"COLUMN-SxF9WGKSSN\"],\"id\":\"ROW-R6g2euP1Dv\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-J5XqiVeAM\"],\"type\":\"ROW\"},\"ROW-RjJzYwoSdW\":{\"children\":[\"CHART-GKx8-xXsDY\",\"MARKDOWN-31B9SF5-Rd\",\"CHART-tjngViHahm\"],\"id\":\"ROW-RjJzYwoSdW\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"ROW\"},\"ROW-Wmoi6B-gkz\":{\"children\":[\"COLUMN-RhlX1kXMl_\",\"COLUMN-_iWiygvDdb\"],\"id\":\"ROW-Wmoi6B-gkz\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-4dFfsm8S5U\"],\"type\":\"ROW\"},\"ROW-ZPIzx9_nnz\":{\"children\":[\"COLUMN-7jVepSEDgG\",\"CHART-5QXmzLmKgx\"],\"id\":\"ROW-ZPIzx9_nnz\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-MenrwwCco\"],\"type\":\"ROW\"},\"ROW-a9a8nFnRBL\":{\"children\":[\"COLUMN-p4q16upFnY\"],\"id\":\"ROW-a9a8nFnRBL\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"ROW\"},\"ROW-gajCGYoLd9\":{\"children\":[\"COLUMN-y4S-2L2ov8\",\"COLUMN-aF98gRdJPb\"],\"id\":\"ROW-gajCGYoLd9\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-4dFfsm8S5U\"],\"type\":\"ROW\"},\"ROW-jPUujZt5nl\":{\"children\":[\"COLUMN-eD1Pre5u69\"],\"id\":\"ROW-jPUujZt5nl\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-4dFfsm8S5U\"],\"type\":\"ROW\"},\"ROW-n-67oY3jP1\":{\"children\":[\"CHART-R27Ew5LXd8\"],\"id\":\"ROW-n-67oY3jP1\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-MenrwwCco\",\"ROW-EyvHj-2eBF\",\"COLUMN-NeTABB6j4w\"],\"type\":\"ROW\"},\"ROW-r97TFrKHEo\":{\"children\":[\"COLUMN-T7BOwRqc9A\",\"COLUMN-CdrYmH_ZaT\"],\"id\":\"ROW-r97TFrKHEo\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-jJERc0sYS\",\"ROW-G2Ix4AX5Qq\",\"COLUMN-r5zK9NeKkX\"],\"type\":\"ROW\"},\"ROW-vluJwMtkcA\":{\"children\":[\"COLUMN-wdKDvMLa-G\"],\"id\":\"ROW-vluJwMtkcA\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\",\"TAB-4dFfsm8S5U\"],\"type\":\"ROW\"},\"TAB-4dFfsm8S5U\":{\"children\":[\"ROW-QrY8SSd_gQ\",\"ROW-gajCGYoLd9\",\"ROW-vluJwMtkcA\",\"DIVIDER-1sLVZsee2i\",\"ROW-OZ34238lPd\",\"ROW-Wmoi6B-gkz\",\"ROW-jPUujZt5nl\"],\"id\":\"TAB-4dFfsm8S5U\",\"meta\":{\"defaultText\":\"Tab title\",\"placeholder\":\"Tab title\",\"text\":\"Clientes\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\"],\"type\":\"TAB\"},\"TAB-J5XqiVeAM\":{\"children\":[\"ROW-R6g2euP1Dv\"],\"id\":\"TAB-J5XqiVeAM\",\"meta\":{\"defaultText\":\"Tab title\",\"placeholder\":\"Tab title\",\"text\":\"Ventas\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\"],\"type\":\"TAB\"},\"TAB-MenrwwCco\":{\"children\":[\"ROW-ZPIzx9_nnz\",\"ROW-EyvHj-2eBF\"],\"id\":\"TAB-MenrwwCco\",\"meta\":{\"defaultText\":\"Tab title\",\"placeholder\":\"Tab title\",\"text\":\"Programas\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\"],\"type\":\"TAB\"},\"TAB-jJERc0sYS\":{\"children\":[\"ROW-G2Ix4AX5Qq\"],\"id\":\"TAB-jJERc0sYS\",\"meta\":{\"defaultText\":\"Tab title\",\"placeholder\":\"Tab title\",\"text\":\"Empleados\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-4xJCe0DFEz\"],\"type\":\"TAB\"},\"TABS-4xJCe0DFEz\":{\"children\":[\"TAB-J5XqiVeAM\",\"TAB-4dFfsm8S5U\",\"TAB-MenrwwCco\",\"TAB-jJERc0sYS\"],\"id\":\"TABS-4xJCe0DFEz\",\"meta\":{},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"TABS\"}}",
+                "slices": [
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "dwh.fact_venta",
+                            "datasource_type": "table",
+                            "id": 1,
+                            "params": "{\"adhoc_filters\": [], \"color_picker\": {\"a\": 1, \"b\": 9, \"g\": 27, \"r\": 235}, \"compare_lag\": 1, \"compare_suffix\": \" ventas\", \"datasource\": \"1__table\", \"granularity_sqla\": \"venta_tiempo\", \"header_font_size\": 0.4, \"metric\": \"count\", \"rolling_type\": \"None\", \"show_trend_line\": true, \"slice_id\": 1, \"start_y_axis_at_zero\": true, \"subheader_font_size\": 0.125, \"time_grain_sqla\": \"P1M\", \"time_range\": \"DATEADD(DATETIME(\\\"now\\\"), -2, year) : now\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"big_number\", \"y_axis_format\": \"SMART_NUMBER\", \"remote_id\": 1, \"datasource_name\": \"fact_venta\", \"schema\": \"dwh\", \"database_name\": \"DWH\"}",
+                            "slice_name": "ventas/mes",
+                            "viz_type": "big_number"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "dwh.fact_venta",
+                            "datasource_type": "table",
+                            "id": 3,
+                            "params": "{\"adhoc_filters\": [], \"datasource\": \"1__table\", \"granularity_sqla\": \"venta_tiempo\", \"header_font_size\": 0.4, \"metric\": \"count\", \"slice_id\": 3, \"subheader\": \"ventas\", \"subheader_font_size\": 0.15, \"time_range\": \"DATEADD(DATETIME(\\\"now\\\"), -2, year) : now\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"big_number_total\", \"y_axis_format\": \"SMART_NUMBER\", \"remote_id\": 3, \"datasource_name\": \"fact_venta\", \"schema\": \"dwh\", \"database_name\": \"DWH\"}",
+                            "slice_name": "ventas/totales",
+                            "viz_type": "big_number_total"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "dwh.licencias/expiracion",
+                            "datasource_type": "table",
+                            "id": 4,
+                            "params": "{\"adhoc_filters\": [], \"color_scheme\": \"echarts5Colors\", \"datasource\": \"3__table\", \"donut\": false, \"granularity_sqla\": \"venta_tiempo\", \"groupby\": [\"expirado\"], \"innerRadius\": 40, \"label_line\": true, \"label_type\": \"key_value_percent\", \"labels_outside\": true, \"legendOrientation\": \"top\", \"legendType\": \"scroll\", \"metric\": \"count\", \"number_format\": \"SMART_NUMBER\", \"outerRadius\": 55, \"row_limit\": 1000, \"show_labels\": true, \"show_legend\": false, \"time_range\": \"DATEADD(DATETIME(\\\"now\\\"), -2, year) : now\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"viz_type\": \"pie\", \"remote_id\": 4, \"datasource_name\": \"licencias/expiracion\", \"schema\": \"dwh\", \"database_name\": \"DWH\"}",
+                            "slice_name": "licencias/estado",
+                            "viz_type": "pie"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "dwh.venta/cliente/tiempo",
+                            "datasource_type": "table",
+                            "id": 5,
+                            "params": "{\"adhoc_filters\": [], \"bar_stacked\": false, \"bottom_margin\": \"auto\", \"color_scheme\": \"d3Category10\", \"columns\": [], \"datasource\": \"7__table\", \"granularity_sqla\": \"venta_tiempo\", \"groupby\": [\"cliente_edad\"], \"label_colors\": {}, \"metrics\": [{\"aggregate\": \"COUNT\", \"column\": {\"column_name\": \"venta_tiempo\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 88, \"is_dttm\": true, \"python_date_format\": null, \"type\": \"DATETIME\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"Cantidad de compras\", \"optionName\": \"metric_fgwa4d7evm_lyfihkdt2u\", \"sqlExpression\": null}, {\"aggregate\": \"COUNT_DISTINCT\", \"column\": {\"column_name\": \"cliente_nombre\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 89, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"STRING\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"Clientes \\u00fanicos\", \"optionName\": \"metric_u7s42w1bt7o_fxrkkmi0mfb\", \"sqlExpression\": null}], \"order_bars\": true, \"order_desc\": false, \"reduce_x_ticks\": false, \"row_limit\": 10000, \"show_bar_value\": true, \"show_controls\": true, \"show_legend\": true, \"slice_id\": 5, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"timeseries_limit_metric\": {\"aggregate\": \"COUNT\", \"column\": {\"column_name\": \"cliente_edad\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 91, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"INT\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": false, \"isNew\": false, \"label\": \"COUNT(cliente_edad)\", \"optionName\": \"metric_zhejir74sk_zql5zsebhtm\", \"sqlExpression\": null}, \"url_params\": {}, \"viz_type\": \"dist_bar\", \"x_axis_label\": \"Edad\", \"x_ticks_layout\": \"flat\", \"y_axis_bounds\": [null, null], \"y_axis_format\": \"SMART_NUMBER\", \"y_axis_label\": \"Compras\", \"y_axis_showminmax\": false, \"remote_id\": 5, \"datasource_name\": \"venta/cliente/tiempo\", \"schema\": \"dwh\", \"database_name\": \"DWH\"}",
+                            "slice_name": "ventas/edad",
+                            "viz_type": "dist_bar"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "dwh.venta/cliente/tiempo",
+                            "datasource_type": "table",
+                            "id": 6,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": \"NULL\", \"expressionType\": \"SIMPLE\", \"filterOptionName\": \"filter_uclzbbtkks_kpfrpvhfpxn\", \"isExtra\": false, \"isNew\": false, \"operator\": \"!=\", \"sqlExpression\": null, \"subject\": \"cliente_empresa_sector\"}], \"color_scheme\": \"d3Category20\", \"datasource\": \"7__table\", \"granularity_sqla\": \"venta_tiempo\", \"groupby\": [\"cliente_empresa_sector\", \"cliente_empresa_actividad\", \"cliente_empresa\"], \"linear_color_scheme\": \"superset_seq_1\", \"metric\": \"count\", \"row_limit\": 10000, \"secondary_metric\": \"count\", \"slice_id\": 6, \"sort_by_metric\": true, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"sunburst\", \"remote_id\": 6, \"datasource_name\": \"venta/cliente/tiempo\", \"schema\": \"dwh\", \"database_name\": \"DWH\"}",
+                            "slice_name": "ventas/empresa",
+                            "viz_type": "sunburst"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "dwh.venta/cliente/tiempo",
+                            "datasource_type": "table",
+                            "id": 7,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": \"NULL\", \"expressionType\": \"SIMPLE\", \"filterOptionName\": \"filter_uclzbbtkks_kpfrpvhfpxn\", \"isExtra\": false, \"isNew\": false, \"operator\": \"!=\", \"sqlExpression\": null, \"subject\": \"cliente_empresa_sector\"}], \"color_scheme\": \"d3Category20c\", \"datasource\": \"7__table\", \"granularity_sqla\": \"venta_tiempo\", \"groupby\": [\"cliente_empresa_sector\"], \"label_colors\": {}, \"metrics\": [\"count\"], \"number_format\": \"SMART_NUMBER\", \"order_desc\": true, \"row_limit\": 10000, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"treemap_ratio\": 1.618033988749895, \"url_params\": {}, \"viz_type\": \"treemap\", \"remote_id\": 7, \"datasource_name\": \"venta/cliente/tiempo\", \"schema\": \"dwh\", \"database_name\": \"DWH\"}",
+                            "slice_name": "ventas/sector",
+                            "viz_type": "treemap"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "dwh.venta/cliente/tiempo",
+                            "datasource_type": "table",
+                            "id": 8,
+                            "params": "{\"adhoc_filters\": [], \"color_scheme\": \"echarts5Colors\", \"datasource\": \"7__table\", \"granularity_sqla\": \"venta_tiempo\", \"groupby\": [\"cliente_genero\"], \"innerRadius\": 30, \"label_line\": false, \"label_type\": \"key_value_percent\", \"labels_outside\": true, \"legendOrientation\": \"top\", \"legendType\": \"scroll\", \"metric\": \"count\", \"number_format\": \"SMART_NUMBER\", \"outerRadius\": 70, \"row_limit\": 10000, \"show_labels\": true, \"show_legend\": false, \"sort_by_metric\": true, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"pie\", \"remote_id\": 8, \"datasource_name\": \"venta/cliente/tiempo\", \"schema\": \"dwh\", \"database_name\": \"DWH\"}",
+                            "slice_name": "ventas/genero",
+                            "viz_type": "pie"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "dwh.venta/cliente/tiempo",
+                            "datasource_type": "table",
+                            "id": 9,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": \"NULL\", \"expressionType\": \"SIMPLE\", \"filterOptionName\": \"filter_zxml5wp46vs_80a3asrhodq\", \"isExtra\": false, \"isNew\": false, \"operator\": \"!=\", \"sqlExpression\": null, \"subject\": \"laboral\"}], \"color_scheme\": \"presetColors\", \"datasource\": \"7__table\", \"granularity_sqla\": \"venta_tiempo\", \"groupby\": [\"laboral\"], \"innerRadius\": 30, \"label_line\": false, \"label_type\": \"key_value_percent\", \"labels_outside\": true, \"legendOrientation\": \"top\", \"legendType\": \"scroll\", \"metric\": {\"aggregate\": \"COUNT\", \"column\": {\"column_name\": \"laboral\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 104, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"STRING\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"cantidad\", \"optionName\": \"metric_nmtl4lkfw0n_szqz7qgn0p\", \"sqlExpression\": null}, \"number_format\": \"SMART_NUMBER\", \"outerRadius\": 70, \"row_limit\": 10000, \"show_labels\": true, \"show_legend\": false, \"slice_id\": 9, \"sort_by_metric\": true, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"pie\", \"remote_id\": 9, \"datasource_name\": \"venta/cliente/tiempo\", \"schema\": \"dwh\", \"database_name\": \"DWH\"}",
+                            "slice_name": "ventas/laboral",
+                            "viz_type": "pie"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "dwh.venta/cliente/tiempo",
+                            "datasource_type": "table",
+                            "id": 10,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": \"NULL\", \"expressionType\": \"SIMPLE\", \"filterOptionName\": \"filter_zxml5wp46vs_80a3asrhodq\", \"isExtra\": false, \"isNew\": false, \"operator\": \"!=\", \"sqlExpression\": null, \"subject\": \"laboral\"}], \"color_scheme\": \"echarts5Colors\", \"datasource\": \"7__table\", \"granularity_sqla\": \"venta_tiempo\", \"groupby\": [\"anho\", \"mes\", \"dia\", \"laboral\"], \"linear_color_scheme\": \"superset_seq_1\", \"metric\": {\"aggregate\": \"COUNT\", \"column\": {\"column_name\": \"laboral\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 104, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"STRING\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"cantidad\", \"optionName\": \"metric_nmtl4lkfw0n_szqz7qgn0p\", \"sqlExpression\": null}, \"row_limit\": 10000, \"sort_by_metric\": false, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"sunburst\", \"remote_id\": 10, \"datasource_name\": \"venta/cliente/tiempo\", \"schema\": \"dwh\", \"database_name\": \"DWH\"}",
+                            "slice_name": "ventas/dia",
+                            "viz_type": "sunburst"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "dwh.fact_venta",
+                            "datasource_type": "table",
+                            "id": 12,
+                            "params": "{\"adhoc_filters\": [], \"cell_padding\": 2, \"cell_size\": 10, \"datasource\": \"1__table\", \"domain_granularity\": \"month\", \"granularity_sqla\": \"venta_tiempo\", \"linear_color_scheme\": \"superset_seq_1\", \"metrics\": [{\"aggregate\": \"COUNT\", \"column\": {\"column_name\": \"venta_ID\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 6, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"INTEGER UNSIGNED\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"cantidad\", \"optionName\": \"metric_jsv275j6q9_zcc8xr8b6n\", \"sqlExpression\": null}], \"show_legend\": false, \"show_metric_name\": false, \"show_values\": false, \"slice_id\": 12, \"steps\": 10, \"subdomain_granularity\": \"day\", \"time_range\": \"DATEADD(DATETIME(\\\"now\\\"), -2, year) : now\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"cal_heatmap\", \"x_axis_time_format\": \"smart_date\", \"y_axis_format\": \"SMART_NUMBER\", \"remote_id\": 12, \"datasource_name\": \"fact_venta\", \"schema\": \"dwh\", \"database_name\": \"DWH\"}",
+                            "slice_name": "ventas/timeline",
+                            "viz_type": "cal_heatmap"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "dwh.venta/cliente/tiempo",
+                            "datasource_type": "table",
+                            "id": 13,
+                            "params": "{\"adhoc_filters\": [], \"all_columns\": [\"venta_tiempo\", \"cliente_nombre\", \"cliente_genero\", \"cliente_edad\", \"cliente_empresa\", \"cliente_empresa_sector\", \"cliente_empresa_actividad\", \"cliente_lat\", \"cliente_lon\", \"cliente_compras\", \"cliente_dinero\", \"anho\", \"mes\", \"dia\", \"dia_semana\", \"trimestre\", \"laboral\"], \"color_pn\": true, \"datasource\": \"7__table\", \"groupby\": [\"cliente_nombre\"], \"metrics\": [{\"aggregate\": \"COUNT\", \"column\": {\"column_name\": \"cliente_compras\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 148, \"is_dttm\": false, \"python_date_format\": null, \"type\": null, \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"compras\", \"optionName\": \"metric_bwv7p54ph1n_lp8m8c0w1d\", \"sqlExpression\": null}, {\"aggregate\": \"SUM\", \"column\": {\"column_name\": \"cliente_dinero\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 149, \"is_dttm\": false, \"python_date_format\": null, \"type\": null, \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"dinero\", \"optionName\": \"metric_cw5spdzethu_imt5qz65uu\", \"sqlExpression\": null}, {\"aggregate\": \"AVG\", \"column\": {\"column_name\": \"cliente_dinero\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 149, \"is_dttm\": false, \"python_date_format\": null, \"type\": null, \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"precio_medio\", \"optionName\": \"metric_zxb0aqgcqks_oh63igrp6j\", \"sqlExpression\": null}], \"order_by_cols\": [], \"order_desc\": true, \"percent_metrics\": [], \"query_mode\": \"aggregate\", \"row_limit\": 10000, \"show_cell_bars\": true, \"table_timestamp_format\": \"smart_date\", \"time_grain_sqla\": \"P1Y\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"viz_type\": \"table\", \"remote_id\": 13, \"datasource_name\": \"venta/cliente/tiempo\", \"schema\": \"dwh\", \"database_name\": \"DWH\"}",
+                            "slice_name": "ventas/cliente",
+                            "viz_type": "table"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "dwh.venta/cliente/tiempo",
+                            "datasource_type": "table",
+                            "id": 14,
+                            "params": "{\"adhoc_filters\": [], \"bar_stacked\": false, \"bottom_margin\": \"auto\", \"color_scheme\": \"SUPERSET_DEFAULT\", \"columns\": [], \"datasource\": \"7__table\", \"groupby\": [\"dia_semana\"], \"label_colors\": {}, \"metrics\": [{\"aggregate\": \"SUM\", \"column\": {\"column_name\": \"cliente_compras\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 148, \"is_dttm\": false, \"python_date_format\": null, \"type\": null, \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"compras\", \"optionName\": \"metric_ap5tyab88c6_upgwem40ckk\", \"sqlExpression\": null}], \"order_bars\": false, \"order_desc\": true, \"row_limit\": 10000, \"show_bar_value\": true, \"show_legend\": false, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"timeseries_limit_metric\": [], \"url_params\": {}, \"viz_type\": \"dist_bar\", \"x_axis_label\": \"D\\u00eda de la semana\", \"x_ticks_layout\": \"flat\", \"y_axis_bounds\": [null, null], \"y_axis_format\": \"SMART_NUMBER\", \"y_axis_label\": \"Cantidad\", \"remote_id\": 14, \"datasource_name\": \"venta/cliente/tiempo\", \"schema\": \"dwh\", \"database_name\": \"DWH\"}",
+                            "slice_name": "ventas/dia_semana",
+                            "viz_type": "dist_bar"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "dwh.venta/cliente/tiempo",
+                            "datasource_type": "table",
+                            "id": 15,
+                            "params": "{\"adhoc_filters\": [], \"bar_stacked\": false, \"bottom_margin\": \"auto\", \"color_scheme\": \"echarts5Colors\", \"columns\": [], \"datasource\": \"7__table\", \"groupby\": [\"mes\"], \"label_colors\": {}, \"metrics\": [{\"aggregate\": \"SUM\", \"column\": {\"column_name\": \"cliente_compras\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 148, \"is_dttm\": false, \"python_date_format\": null, \"type\": null, \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"compras\", \"optionName\": \"metric_ap5tyab88c6_upgwem40ckk\", \"sqlExpression\": null}], \"order_bars\": true, \"order_desc\": true, \"row_limit\": 10000, \"show_bar_value\": true, \"show_legend\": false, \"slice_id\": 15, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"timeseries_limit_metric\": [], \"url_params\": {}, \"viz_type\": \"dist_bar\", \"x_axis_label\": \"Mes\", \"x_ticks_layout\": \"flat\", \"y_axis_bounds\": [null, null], \"y_axis_format\": \"SMART_NUMBER\", \"y_axis_label\": \"Cantidad\", \"remote_id\": 15, \"datasource_name\": \"venta/cliente/tiempo\", \"schema\": \"dwh\", \"database_name\": \"DWH\"}",
+                            "slice_name": "ventas/mes_anho",
+                            "viz_type": "dist_bar"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "dwh.ventas/programa",
+                            "datasource_type": "table",
+                            "id": 16,
+                            "params": "{\"adhoc_filters\": [], \"datasource\": \"8__table\", \"granularity_sqla\": \"venta_last_update\", \"header_font_size\": 0.4, \"metric\": {\"aggregate\": \"SUM\", \"column\": {\"column_name\": \"programa_proyecto_presupuesto\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 160, \"is_dttm\": false, \"python_date_format\": null, \"type\": null, \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": false, \"isNew\": false, \"label\": \"SUM(programa_proyecto_presupuesto)\", \"optionName\": \"metric_9vjydo0taz7_o1j7oynnk8\", \"sqlExpression\": null}, \"slice_id\": 16, \"subheader\": \"en gastos\", \"subheader_font_size\": 0.15, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"big_number_total\", \"y_axis_format\": \"$,.2f\", \"remote_id\": 16, \"datasource_name\": \"ventas/programa\", \"schema\": \"dwh\", \"database_name\": \"DWH\"}",
+                            "slice_name": "ventas/coste",
+                            "viz_type": "big_number_total"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "dwh.venta/cliente/tiempo",
+                            "datasource_type": "table",
+                            "id": 17,
+                            "params": "{\"adhoc_filters\": [], \"datasource\": \"7__table\", \"header_font_size\": 0.4, \"metric\": {\"aggregate\": \"SUM\", \"column\": {\"column_name\": \"cliente_dinero\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 149, \"is_dttm\": false, \"python_date_format\": null, \"type\": null, \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"dinero\", \"optionName\": \"metric_ls32irt1htc_sglvsnajenr\", \"sqlExpression\": null}, \"subheader\": \"en ingresos\", \"subheader_font_size\": 0.15, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"big_number_total\", \"y_axis_format\": \"$,.2f\", \"remote_id\": 17, \"datasource_name\": \"venta/cliente/tiempo\", \"schema\": \"dwh\", \"database_name\": \"DWH\"}",
+                            "slice_name": "ventas/ingresos",
+                            "viz_type": "big_number_total"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "dwh.ventas/programa",
+                            "datasource_type": "table",
+                            "id": 18,
+                            "params": "{\"adhoc_filters\": [], \"bottom_margin\": \"auto\", \"color_scheme\": \"SUPERSET_DEFAULT\", \"datasource\": \"8__table\", \"entity\": \"programa_nombre\", \"granularity_sqla\": \"venta_last_update\", \"label_colors\": {}, \"left_margin\": \"auto\", \"max_bubble_size\": \"25\", \"series\": \"programa_nombre\", \"show_legend\": false, \"size\": {\"aggregate\": \"AVG\", \"column\": {\"column_name\": \"programa_valoraciones\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 159, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"INT\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"Valoraci\\u00f3n media\", \"optionName\": \"metric_3a9ynzkge0t_lgx8z0lyevg\", \"sqlExpression\": null}, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"bubble\", \"x\": {\"aggregate\": \"AVG\", \"column\": {\"column_name\": \"programa_proyecto_tiempo\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 161, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"INT\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"Tiempo de desarrollo (d\\u00edas)\", \"optionName\": \"metric_04ea0dse0hpq_vfrb97yw2pd\", \"sqlExpression\": null}, \"x_axis_format\": \"SMART_NUMBER\", \"x_axis_label\": \"Tiempo de desarrollo (d\\u00edas)\", \"x_axis_showminmax\": false, \"x_log_scale\": false, \"x_ticks_layout\": \"auto\", \"y\": {\"aggregate\": \"AVG\", \"column\": {\"column_name\": \"programa_proyecto_jefe_exp\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 162, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"INT\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"Experiencia jefe de proyecto (a\\u00f1os)\", \"optionName\": \"metric_l28exyt7xos_moh9xcag8tk\", \"sqlExpression\": null}, \"y_axis_format\": \"SMART_NUMBER\", \"y_axis_label\": \"Experiencia del jefe de proyecto (a\\u00f1os)\", \"y_axis_showminmax\": false, \"y_log_scale\": true, \"remote_id\": 18, \"datasource_name\": \"ventas/programa\", \"schema\": \"dwh\", \"database_name\": \"DWH\"}",
+                            "slice_name": "proyectos",
+                            "viz_type": "bubble"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "dwh.ventas/programa",
+                            "datasource_type": "table",
+                            "id": 19,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": \"NULL\", \"expressionType\": \"SIMPLE\", \"filterOptionName\": \"filter_17ilozc4snd_yalz8l3pnaq\", \"isExtra\": false, \"isNew\": false, \"operator\": \"!=\", \"sqlExpression\": null, \"subject\": \"programa_versiones\"}], \"all_columns\": [], \"color_pn\": true, \"datasource\": \"8__table\", \"granularity_sqla\": \"venta_last_update\", \"groupby\": [\"programa_nombre\"], \"include_search\": true, \"metrics\": [{\"aggregate\": \"AVG\", \"column\": {\"column_name\": \"programa_proyecto_presupuesto\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 160, \"is_dttm\": false, \"python_date_format\": null, \"type\": null, \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"presupuesto\", \"optionName\": \"metric_m4isyydgl6c_st043ptnse\", \"sqlExpression\": null}], \"order_by_cols\": [], \"order_desc\": true, \"percent_metrics\": [], \"query_mode\": \"aggregate\", \"row_limit\": 100, \"show_cell_bars\": true, \"slice_id\": 19, \"table_timestamp_format\": \"smart_date\", \"time_grain_sqla\": \"P1D\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"table\", \"remote_id\": 19, \"datasource_name\": \"ventas/programa\", \"schema\": \"dwh\", \"database_name\": \"DWH\"}",
+                            "slice_name": "proyectos/presupuesto",
+                            "viz_type": "table"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "dwh.ventas/programa",
+                            "datasource_type": "table",
+                            "id": 21,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": \"NULL\", \"expressionType\": \"SIMPLE\", \"filterOptionName\": \"filter_17ilozc4snd_yalz8l3pnaq\", \"isExtra\": false, \"isNew\": false, \"operator\": \"!=\", \"sqlExpression\": null, \"subject\": \"programa_versiones\"}], \"color_scheme\": \"d3Category20c\", \"datasource\": \"8__table\", \"donut\": true, \"granularity_sqla\": \"venta_last_update\", \"groupby\": [\"programa_versiones\"], \"innerRadius\": 48, \"label_type\": \"key_value_percent\", \"labels_outside\": true, \"legendOrientation\": \"top\", \"legendType\": \"scroll\", \"metric\": {\"aggregate\": \"COUNT_DISTINCT\", \"column\": {\"column_name\": \"programa_nombre\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 157, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"STRING\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"N\\u00famero de versiones\", \"optionName\": \"metric_d5fshax9at6_6y73miar1ed\", \"sqlExpression\": null}, \"number_format\": \"SMART_NUMBER\", \"outerRadius\": 58, \"row_limit\": 100, \"show_labels\": true, \"show_legend\": false, \"sort_by_metric\": false, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"pie\", \"remote_id\": 21, \"datasource_name\": \"ventas/programa\", \"schema\": \"dwh\", \"database_name\": \"DWH\"}",
+                            "slice_name": "proyectos/versiones",
+                            "viz_type": "pie"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "dwh.ventas/programa",
+                            "datasource_type": "table",
+                            "id": 22,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": \"NULL\", \"expressionType\": \"SIMPLE\", \"filterOptionName\": \"filter_17ilozc4snd_yalz8l3pnaq\", \"isExtra\": false, \"isNew\": false, \"operator\": \"!=\", \"sqlExpression\": null, \"subject\": \"programa_proyecto_jefe_exp\"}], \"color_scheme\": \"d3Category20c\", \"datasource\": \"8__table\", \"donut\": true, \"granularity_sqla\": \"venta_last_update\", \"groupby\": [\"programa_proyecto_jefe_exp\"], \"innerRadius\": 48, \"label_line\": false, \"label_type\": \"key_value_percent\", \"labels_outside\": true, \"legendOrientation\": \"top\", \"legendType\": \"scroll\", \"metric\": {\"aggregate\": \"COUNT_DISTINCT\", \"column\": {\"column_name\": \"programa_nombre\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 157, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"STRING\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"Experiencia media del jefe\", \"optionName\": \"metric_d5fshax9at6_6y73miar1ed\", \"sqlExpression\": null}, \"number_format\": \"SMART_NUMBER\", \"outerRadius\": 58, \"row_limit\": 100, \"show_labels\": true, \"show_legend\": false, \"sort_by_metric\": false, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"pie\", \"remote_id\": 22, \"datasource_name\": \"ventas/programa\", \"schema\": \"dwh\", \"database_name\": \"DWH\"}",
+                            "slice_name": "proyectos/experiencia",
+                            "viz_type": "pie"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "dwh.dim_empleado",
+                            "datasource_type": "table",
+                            "id": 23,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": \"NULL\", \"expressionType\": \"SIMPLE\", \"filterOptionName\": \"filter_n2xnxro3dai_e01deblfnt9\", \"isExtra\": false, \"isNew\": false, \"operator\": \"!=\", \"sqlExpression\": null, \"subject\": \"empleado_nombre\"}], \"color_scheme\": \"d3Category20\", \"datasource\": \"9__table\", \"granularity_sqla\": \"empleado_last_update\", \"groupby\": [\"empleado_puesto\"], \"label_colors\": {}, \"metrics\": [{\"aggregate\": \"COUNT_DISTINCT\", \"column\": {\"column_name\": \"empleado_ID\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 168, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"INTEGER UNSIGNED\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"cantidad\", \"optionName\": \"metric_o2mn0ge7208_t1blfaqv6so\", \"sqlExpression\": null}], \"number_format\": \"SMART_NUMBER\", \"order_desc\": true, \"row_limit\": 10000, \"slice_id\": 23, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"treemap_ratio\": 1.618033988749895, \"url_params\": {}, \"viz_type\": \"treemap\", \"remote_id\": 23, \"datasource_name\": \"dim_empleado\", \"schema\": \"dwh\", \"database_name\": \"DWH\"}",
+                            "slice_name": "empleado/puesto",
+                            "viz_type": "treemap"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "dwh.dim_empleado",
+                            "datasource_type": "table",
+                            "id": 24,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": \"NULL\", \"expressionType\": \"SIMPLE\", \"filterOptionName\": \"filter_n2xnxro3dai_e01deblfnt9\", \"isExtra\": false, \"isNew\": false, \"operator\": \"!=\", \"sqlExpression\": null, \"subject\": \"empleado_nombre\"}], \"bar_stacked\": false, \"bottom_margin\": \"auto\", \"color_scheme\": \"d3Category20\", \"columns\": [], \"datasource\": \"9__table\", \"granularity_sqla\": \"empleado_last_update\", \"groupby\": [\"empleado_genero\"], \"label_colors\": {}, \"metrics\": [{\"aggregate\": \"COUNT_DISTINCT\", \"column\": {\"column_name\": \"empleado_ID\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 168, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"INTEGER UNSIGNED\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"cantidad\", \"optionName\": \"metric_o2mn0ge7208_t1blfaqv6so\", \"sqlExpression\": null}, {\"aggregate\": \"MAX\", \"column\": {\"column_name\": \"empleado_edad\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 174, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"TINYINT\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"mayor edad\", \"optionName\": \"metric_30ry7rgqiaj_w93wuheh6m\", \"sqlExpression\": null}, {\"aggregate\": \"AVG\", \"column\": {\"column_name\": \"empleado_edad\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 174, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"TINYINT\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"edad media\", \"optionName\": \"metric_vi2fsw2goih_cn9tf9q43xm\", \"sqlExpression\": null}, {\"aggregate\": \"MIN\", \"column\": {\"column_name\": \"empleado_edad\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 174, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"TINYINT\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"menor edad\", \"optionName\": \"metric_kgduu6fs9t_pexscgvo78\", \"sqlExpression\": null}, {\"aggregate\": null, \"column\": null, \"expressionType\": \"SQL\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"mayor salario (k)\", \"optionName\": \"metric_zk26wzjhe8_jhj56f9jic8\", \"sqlExpression\": \"MAX(empleado_salario/1000)\"}, {\"aggregate\": null, \"column\": null, \"expressionType\": \"SQL\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"salario medio (k)\", \"optionName\": \"metric_3kgm2la73rs_vdqnu3x0ljq\", \"sqlExpression\": \"AVG(empleado_salario/1000)\"}, {\"aggregate\": null, \"column\": null, \"expressionType\": \"SQL\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"menor salario (k)\", \"optionName\": \"metric_j4t960b86jh_8zfdx98gr67\", \"sqlExpression\": \"MIN(empleado_salario/1000)\"}], \"order_bars\": true, \"order_desc\": true, \"row_limit\": 10000, \"show_bar_value\": true, \"show_legend\": true, \"slice_id\": 24, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"dist_bar\", \"x_axis_label\": \"G\\u00e9nero\", \"x_ticks_layout\": \"flat\", \"y_axis_bounds\": [null, null], \"y_axis_format\": \"SMART_NUMBER\", \"remote_id\": 24, \"datasource_name\": \"dim_empleado\", \"schema\": \"dwh\", \"database_name\": \"DWH\"}",
+                            "slice_name": "empleado/edad+salario",
+                            "viz_type": "dist_bar"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "dwh.dim_empleado",
+                            "datasource_type": "table",
+                            "id": 25,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": \"NULL\", \"expressionType\": \"SIMPLE\", \"filterOptionName\": \"filter_n2xnxro3dai_e01deblfnt9\", \"isExtra\": false, \"isNew\": false, \"operator\": \"!=\", \"sqlExpression\": null, \"subject\": \"empleado_nombre\"}], \"all_columns\": [], \"color_pn\": true, \"datasource\": \"9__table\", \"granularity_sqla\": \"empleado_last_update\", \"groupby\": [\"empleado_nombre\", \"empleado_puesto\"], \"metrics\": [{\"aggregate\": \"AVG\", \"column\": {\"column_name\": \"empleado_salario\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 173, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"INTEGER UNSIGNED\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"salario\", \"optionName\": \"metric_oc5ufqm6wvr_kjgwg3mwvhb\", \"sqlExpression\": null}, {\"aggregate\": \"AVG\", \"column\": {\"column_name\": \"empleado_edad\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 174, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"TINYINT\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"edad\", \"optionName\": \"metric_ywkbw9kcnpk_ii9iigne5rk\", \"sqlExpression\": null}], \"order_by_cols\": [], \"order_desc\": true, \"percent_metrics\": [], \"query_mode\": \"aggregate\", \"row_limit\": 10000, \"show_cell_bars\": true, \"table_timestamp_format\": \"smart_date\", \"time_grain_sqla\": \"P1D\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"table\", \"remote_id\": 25, \"datasource_name\": \"dim_empleado\", \"schema\": \"dwh\", \"database_name\": \"DWH\"}",
+                            "slice_name": "empleados",
+                            "viz_type": "table"
+                        }
+                    }
+                ],
+                "slug": null
+            }
+        }
+    ],
+    "datasources": [
+        {
+            "__SqlaTable__": {
+                "cache_timeout": null,
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T11:05:18"
+                            },
+                            "column_name": "empleado_bigkey",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T11:05:18"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 163,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 9,
+                            "type": "INTEGER UNSIGNED",
+                            "uuid": "d1ab3d31-8045-49a3-a280-520db1022a85",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T11:05:18"
+                            },
+                            "column_name": "empleado_last_update",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T11:05:18"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 164,
+                            "is_active": true,
+                            "is_dttm": true,
+                            "python_date_format": null,
+                            "table_id": 9,
+                            "type": "DATETIME",
+                            "uuid": "eb5f9c0f-1210-4a84-b858-37bfdee14e15",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T11:05:18"
+                            },
+                            "column_name": "empleado_version",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T11:05:18"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 165,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 9,
+                            "type": "SMALLINT",
+                            "uuid": "98a9be65-fcfe-489f-91ba-11964a5bbdd2",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T11:05:18"
+                            },
+                            "column_name": "empleado_valid_from",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T11:05:18"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 166,
+                            "is_active": true,
+                            "is_dttm": true,
+                            "python_date_format": null,
+                            "table_id": 9,
+                            "type": "DATE",
+                            "uuid": "dcb57a4d-64e4-43e5-8a27-f8657689f6b3",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T11:05:18"
+                            },
+                            "column_name": "empleado_valid_to",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T11:05:18"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 167,
+                            "is_active": true,
+                            "is_dttm": true,
+                            "python_date_format": null,
+                            "table_id": 9,
+                            "type": "DATE",
+                            "uuid": "71b3fa28-1878-480d-8517-aefecc0ed021",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T11:05:18"
+                            },
+                            "column_name": "empleado_ID",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T11:05:18"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 168,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 9,
+                            "type": "INTEGER UNSIGNED",
+                            "uuid": "d1073fe7-e33d-42d8-9fb6-d17e8881d5ef",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T11:05:18"
+                            },
+                            "column_name": "empleado_nombre",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T11:05:18"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 169,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 9,
+                            "type": "VARCHAR(200)",
+                            "uuid": "8b5155f3-eeef-46e2-bf00-e799d26c10ec",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T11:05:18"
+                            },
+                            "column_name": "empleado_genero",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T11:05:18"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 170,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 9,
+                            "type": "VARCHAR(6)",
+                            "uuid": "139902da-7997-423b-b72d-feba9d8ccb61",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T11:05:18"
+                            },
+                            "column_name": "empleado_fecha_nacimiento",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T11:05:18"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 171,
+                            "is_active": true,
+                            "is_dttm": true,
+                            "python_date_format": null,
+                            "table_id": 9,
+                            "type": "DATE",
+                            "uuid": "c5f3d73a-91c2-4c05-93cc-b3c82bdc533e",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T11:05:18"
+                            },
+                            "column_name": "empleado_puesto",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T11:05:18"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 172,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 9,
+                            "type": "VARCHAR(50)",
+                            "uuid": "29417631-1b7c-4452-8360-763d30434232",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T11:05:18"
+                            },
+                            "column_name": "empleado_salario",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T11:05:18"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 173,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 9,
+                            "type": "INTEGER UNSIGNED",
+                            "uuid": "b2dc6ff2-31be-4ef9-845d-f74e7f54e653",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T11:05:18"
+                            },
+                            "column_name": "empleado_edad",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T11:05:18"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 174,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 9,
+                            "type": "TINYINT",
+                            "uuid": "9a86d6c7-19eb-4e2b-b811-4a8784d43a73",
+                            "verbose_name": null
+                        }
+                    }
+                ],
+                "database_id": 1,
+                "default_endpoint": null,
+                "description": null,
+                "extra": null,
+                "fetch_values_predicate": null,
+                "filter_select_enabled": false,
+                "main_dttm_col": "empleado_last_update",
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T11:05:18"
+                            },
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T11:05:18"
+                            },
+                            "d3format": null,
+                            "description": null,
+                            "expression": "COUNT(*)",
+                            "extra": null,
+                            "id": 9,
+                            "metric_name": "count",
+                            "metric_type": "count",
+                            "table_id": 9,
+                            "uuid": "b5d60b4a-c914-41eb-a872-c34e12a8da40",
+                            "verbose_name": "COUNT(*)",
+                            "warning_text": null
+                        }
+                    }
+                ],
+                "offset": 0,
+                "params": "{\"remote_id\": 9, \"database_name\": \"DWH\"}",
+                "schema": "dwh",
+                "sql": null,
+                "table_name": "dim_empleado",
+                "template_params": null
+            }
+        },
+        {
+            "__SqlaTable__": {
+                "cache_timeout": null,
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "column_name": "venta_tiempo",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 139,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 7,
+                            "type": null,
+                            "uuid": "10d461f2-65cd-4763-8a0c-002c06915972",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "column_name": "cliente_nombre",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 140,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 7,
+                            "type": null,
+                            "uuid": "71f67e3a-a9e1-4a42-85fb-6ab3ff0f5882",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "column_name": "cliente_genero",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 141,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 7,
+                            "type": null,
+                            "uuid": "0094eff0-4511-42f5-b6e8-9196100594d6",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "column_name": "cliente_edad",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 142,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 7,
+                            "type": null,
+                            "uuid": "2fba8c2b-fe61-47fb-bac9-ec888ba15a8b",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "column_name": "cliente_empresa",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 143,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 7,
+                            "type": null,
+                            "uuid": "ac66415c-03c4-4205-abfb-9cc821328e26",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "column_name": "cliente_empresa_sector",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 144,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 7,
+                            "type": null,
+                            "uuid": "0cb5386f-e559-4959-8fa4-223e6742ff57",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "column_name": "cliente_empresa_actividad",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 145,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 7,
+                            "type": null,
+                            "uuid": "14a824b5-7626-49c6-83ad-a19aed1af02a",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "column_name": "cliente_lat",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 146,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 7,
+                            "type": null,
+                            "uuid": "86e418ad-7f67-427e-a04d-f35ca86ae11c",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "column_name": "cliente_lon",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 147,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 7,
+                            "type": null,
+                            "uuid": "f8ad304d-01f8-4884-9f4e-5270185b5cf2",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "column_name": "cliente_compras",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 148,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 7,
+                            "type": null,
+                            "uuid": "b1f2da4e-036d-46fd-b7ed-a2959f8e4fc0",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "column_name": "cliente_dinero",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 149,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 7,
+                            "type": null,
+                            "uuid": "87a65ae0-5f6e-4286-8d48-2e8ad86f4955",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "column_name": "anho",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 150,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 7,
+                            "type": null,
+                            "uuid": "e509f206-bdf3-4f81-9a71-64a54b54f5d9",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "column_name": "mes",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 151,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 7,
+                            "type": null,
+                            "uuid": "93a226d2-2f93-4d69-8ea7-9cb7dc1adcb3",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "column_name": "dia",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 152,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 7,
+                            "type": null,
+                            "uuid": "c36583cf-b547-47d9-b857-927e6f11170e",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "column_name": "dia_semana",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 153,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 7,
+                            "type": null,
+                            "uuid": "ef4d27a8-6880-41ba-bc2d-67ee91a3e4b1",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "column_name": "trimestre",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 154,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 7,
+                            "type": null,
+                            "uuid": "ef985f78-7d0c-4348-9bbb-e888c6702b7d",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "column_name": "laboral",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T09:24:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 155,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 7,
+                            "type": null,
+                            "uuid": "c7a34631-b7f1-4c58-9cf6-366e231e7131",
+                            "verbose_name": null
+                        }
+                    }
+                ],
+                "database_id": 1,
+                "default_endpoint": null,
+                "description": null,
+                "extra": null,
+                "fetch_values_predicate": null,
+                "filter_select_enabled": false,
+                "main_dttm_col": null,
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T06:35:36"
+                            },
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T06:35:36"
+                            },
+                            "d3format": null,
+                            "description": null,
+                            "expression": "count(*)",
+                            "extra": null,
+                            "id": 7,
+                            "metric_name": "count",
+                            "metric_type": null,
+                            "table_id": 7,
+                            "uuid": "3effbfc1-2cb3-41ea-a909-14457ea81726",
+                            "verbose_name": null,
+                            "warning_text": null
+                        }
+                    }
+                ],
+                "offset": 0,
+                "params": "{\"remote_id\": 7, \"database_name\": \"DWH\"}",
+                "schema": "dwh",
+                "sql": "SELECT\r\n  venta_last_update,\r\n  venta_tiempo,\r\n  cliente_nombre,\r\n  cliente_genero,\r\n  cliente_edad,\r\n  cliente_empresa,\r\n  cliente_empresa_sector,\r\n  cliente_empresa_actividad,\r\n  cliente_lat, cliente_lon,\r\n  cliente_compras,\r\n  cliente_dinero,\r\n  anho, mes, dia, dia_semana, trimestre, laboral\r\nFROM fact_venta\r\n  LEFT JOIN dim_cliente ON venta_cliente = cliente_ID\r\n  LEFT JOIN dim_tiempo ON venta_tiempo = fecha\r\nWHERE venta_tiempo",
+                "table_name": "venta/cliente/tiempo",
+                "template_params": null
+            }
+        },
+        {
+            "__SqlaTable__": {
+                "cache_timeout": null,
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T09:50:59"
+                            },
+                            "column_name": "venta_last_update",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T09:50:59"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 156,
+                            "is_active": true,
+                            "is_dttm": true,
+                            "python_date_format": null,
+                            "table_id": 8,
+                            "type": "DATETIME",
+                            "uuid": "22680e27-0b62-4af4-8e6e-34754a1535a1",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T09:50:59"
+                            },
+                            "column_name": "programa_nombre",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T09:50:59"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 157,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 8,
+                            "type": "STRING",
+                            "uuid": "c959619e-6ddb-43ae-9ce6-f593ab750c5a",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T09:50:59"
+                            },
+                            "column_name": "programa_versiones",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T09:50:59"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 158,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 8,
+                            "type": "INT",
+                            "uuid": "4c55e465-e873-4576-a296-82495a43ebd4",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T09:50:59"
+                            },
+                            "column_name": "programa_valoraciones",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T09:50:59"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 159,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 8,
+                            "type": "INT",
+                            "uuid": "420ffbb2-e1b0-4364-a3c4-f238e7c6cd0c",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T09:50:59"
+                            },
+                            "column_name": "programa_proyecto_presupuesto",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T09:50:59"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 160,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 8,
+                            "type": null,
+                            "uuid": "a07f4560-f549-43d5-a95b-5c5af91ea6bd",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T09:50:59"
+                            },
+                            "column_name": "programa_proyecto_tiempo",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T09:50:59"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 161,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 8,
+                            "type": "INT",
+                            "uuid": "77655874-d495-4357-a5ad-80f8bad39d78",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T09:50:59"
+                            },
+                            "column_name": "programa_proyecto_jefe_exp",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T09:50:59"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 162,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 8,
+                            "type": "INT",
+                            "uuid": "d1517ee4-65d8-462c-8026-2ef4bc09421d",
+                            "verbose_name": null
+                        }
+                    }
+                ],
+                "database_id": 1,
+                "default_endpoint": null,
+                "description": null,
+                "extra": null,
+                "fetch_values_predicate": null,
+                "filter_select_enabled": false,
+                "main_dttm_col": null,
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-28T09:50:59"
+                            },
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-28T09:50:59"
+                            },
+                            "d3format": null,
+                            "description": null,
+                            "expression": "count(*)",
+                            "extra": null,
+                            "id": 8,
+                            "metric_name": "count",
+                            "metric_type": null,
+                            "table_id": 8,
+                            "uuid": "bdc21a48-c913-49da-bbd6-a6582cede9d8",
+                            "verbose_name": null,
+                            "warning_text": null
+                        }
+                    }
+                ],
+                "offset": 0,
+                "params": "{\"remote_id\": 8, \"database_name\": \"DWH\"}",
+                "schema": "dwh",
+                "sql": "SELECT\n  venta_last_update,\n  programa_nombre,\n  programa_proyecto,\n  programa_versiones,\n  programa_valoraciones,\n  programa_proyecto_presupuesto,\n  programa_proyecto_tiempo,\n  programa_proyecto_jefe_exp \nFROM fact_venta\n  LEFT JOIN dim_programa ON venta_programa = programa_ID",
+                "table_name": "ventas/programa",
+                "template_params": null
+            }
+        },
+        {
+            "__SqlaTable__": {
+                "cache_timeout": null,
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-27T17:14:09"
+                            },
+                            "column_name": "venta_bigkey",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-27T17:14:09"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 29,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 3,
+                            "type": "INT",
+                            "uuid": "55251a3c-aab5-4a4b-a595-cfcfd098029c",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-27T17:14:09"
+                            },
+                            "column_name": "venta_tiempo",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-27T17:14:09"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 30,
+                            "is_active": true,
+                            "is_dttm": true,
+                            "python_date_format": null,
+                            "table_id": 3,
+                            "type": "DATETIME",
+                            "uuid": "3eb6b85a-6d49-46da-9ad5-a7743d2fc3f5",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-27T17:14:09"
+                            },
+                            "column_name": "expirado",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-27T17:14:09"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 31,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 3,
+                            "type": "STRING",
+                            "uuid": "ef60a813-911d-4c19-9821-d713a6a6df65",
+                            "verbose_name": null
+                        }
+                    }
+                ],
+                "database_id": 1,
+                "default_endpoint": null,
+                "description": null,
+                "extra": null,
+                "fetch_values_predicate": null,
+                "filter_select_enabled": false,
+                "main_dttm_col": null,
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-27T17:14:09"
+                            },
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-27T17:14:09"
+                            },
+                            "d3format": null,
+                            "description": null,
+                            "expression": "count(*)",
+                            "extra": null,
+                            "id": 3,
+                            "metric_name": "count",
+                            "metric_type": null,
+                            "table_id": 3,
+                            "uuid": "506bb803-2236-4add-861a-7710edd5f5eb",
+                            "verbose_name": null,
+                            "warning_text": null
+                        }
+                    }
+                ],
+                "offset": 0,
+                "params": "{\"remote_id\": 3, \"database_name\": \"DWH\"}",
+                "schema": "dwh",
+                "sql": "SELECT\r\n  venta_bigkey ,\r\n  venta_tiempo,\r\n  IF(venta_expiracion > NOW(), 'expirado', 'activo') AS expirado\r\nFROM fact_venta\r\nWHERE venta_expiracion\r\nORDER BY 3, 2, 1",
+                "table_name": "licencias/expiracion",
+                "template_params": null
+            }
+        },
+        {
+            "__SqlaTable__": {
+                "cache_timeout": null,
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-27T14:52:06"
+                            },
+                            "column_name": "venta_bigkey",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-27T14:52:06"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 1,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "INTEGER UNSIGNED",
+                            "uuid": "71f72b80-3846-4aec-b5fa-858b4775921d",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-27T14:52:06"
+                            },
+                            "column_name": "venta_last_update",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-27T14:52:06"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 2,
+                            "is_active": true,
+                            "is_dttm": true,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "DATETIME",
+                            "uuid": "596fe010-37dc-435c-91b6-90f0696363dc",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-27T14:52:06"
+                            },
+                            "column_name": "venta_version",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-27T14:52:06"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 3,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "SMALLINT",
+                            "uuid": "d98f43a5-08ad-4631-a9f0-8c5b3e339f4d",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-27T14:52:06"
+                            },
+                            "column_name": "venta_valid_from",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-27T14:52:06"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 4,
+                            "is_active": true,
+                            "is_dttm": true,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "DATE",
+                            "uuid": "cc2c589d-8be5-4d14-8ff4-34f04a3a98ea",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-27T14:52:06"
+                            },
+                            "column_name": "venta_valid_to",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-27T14:52:06"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 5,
+                            "is_active": true,
+                            "is_dttm": true,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "DATE",
+                            "uuid": "0df9b01c-2661-46c2-928f-58710acaf78d",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-27T14:52:06"
+                            },
+                            "column_name": "venta_ID",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-27T14:52:06"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 6,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "INTEGER UNSIGNED",
+                            "uuid": "86381a44-7a3e-4857-a589-265faae27681",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-27T14:52:06"
+                            },
+                            "column_name": "venta_tiempo",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-27T14:52:06"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 7,
+                            "is_active": true,
+                            "is_dttm": true,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "DATETIME",
+                            "uuid": "c82fe813-4ef7-4af6-90bb-63ba6fe2cee4",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-27T14:52:06"
+                            },
+                            "column_name": "venta_cliente",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-27T14:52:06"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 8,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "INTEGER UNSIGNED",
+                            "uuid": "bfa7f7b4-d09c-4fd5-bdcf-df23e87c2b37",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-27T14:52:06"
+                            },
+                            "column_name": "venta_programa",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-27T14:52:06"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 9,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "INTEGER UNSIGNED",
+                            "uuid": "1f5fd355-f14c-4d93-b4bf-c5f62e08aa3d",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-27T14:52:06"
+                            },
+                            "column_name": "venta_empleado",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-27T14:52:06"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 10,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "INTEGER UNSIGNED",
+                            "uuid": "3ab0db2a-5e06-41d4-92cd-2ab4ca316fa1",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-27T14:52:06"
+                            },
+                            "column_name": "venta_importe",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-27T14:52:06"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 11,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "DOUBLE",
+                            "uuid": "a369d44e-699c-42cb-9eab-98ea88650842",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-27T14:52:06"
+                            },
+                            "column_name": "venta_expiracion",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-27T14:52:06"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 12,
+                            "is_active": true,
+                            "is_dttm": true,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "DATETIME",
+                            "uuid": "9a6f7607-d67c-46c6-baaa-ed6b2eb30573",
+                            "verbose_name": null
+                        }
+                    }
+                ],
+                "database_id": 1,
+                "default_endpoint": null,
+                "description": null,
+                "extra": null,
+                "fetch_values_predicate": null,
+                "filter_select_enabled": false,
+                "main_dttm_col": "venta_last_update",
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-05-27T14:52:06"
+                            },
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-05-27T14:52:06"
+                            },
+                            "d3format": null,
+                            "description": null,
+                            "expression": "COUNT(*)",
+                            "extra": null,
+                            "id": 1,
+                            "metric_name": "count",
+                            "metric_type": "count",
+                            "table_id": 1,
+                            "uuid": "94c6f22c-535b-456e-bac6-c76c01c47517",
+                            "verbose_name": "COUNT(*)",
+                            "warning_text": null
+                        }
+                    }
+                ],
+                "offset": 0,
+                "params": "{\"remote_id\": 1, \"database_name\": \"DWH\"}",
+                "schema": "dwh",
+                "sql": null,
+                "table_name": "fact_venta",
+                "template_params": null
+            }
+        }
+    ]
+}

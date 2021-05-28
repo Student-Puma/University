@@ -1,0 +1,29 @@
+- columns:
+  - column_name: cliente_empresa_actividad
+  - column_name: cliente_empresa_sector
+  - column_name: dia_semana
+  - column_name: cliente_compras
+  - column_name: cliente_edad
+  - column_name: cliente_empresa
+  - column_name: cliente_lat
+  - column_name: venta_tiempo
+  - column_name: cliente_nombre
+  - column_name: cliente_dinero
+  - column_name: cliente_genero
+  - column_name: cliente_lon
+  - column_name: laboral
+  - column_name: dia
+  - column_name: anho
+  - column_name: trimestre
+  - column_name: mes
+  metrics:
+  - expression: count(*)
+    metric_name: count
+  schema: dwh
+  sql: "SELECT\r\n  venta_last_update,\r\n  venta_tiempo,\r\n  cliente_nombre,\r\n\
+    \  cliente_genero,\r\n  cliente_edad,\r\n  cliente_empresa,\r\n  cliente_empresa_sector,\r\
+    \n  cliente_empresa_actividad,\r\n  cliente_lat, cliente_lon,\r\n  cliente_compras,\r\
+    \n  cliente_dinero,\r\n  anho, mes, dia, dia_semana, trimestre, laboral\r\nFROM\
+    \ fact_venta\r\n  LEFT JOIN dim_cliente ON venta_cliente = cliente_ID\r\n  LEFT\
+    \ JOIN dim_tiempo ON venta_tiempo = fecha\r\nWHERE venta_tiempo"
+  table_name: venta/cliente/tiempo

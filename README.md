@@ -11,9 +11,9 @@
     - [ ] Descripción del Dashboard, indicando el propósito de consulta en base a los objetivos establecidos en el proyecto del DataMart
     - [ ] Captura de pantalla de los gráficos y filtros del Dashboard
     - [ ] SQL de las tablas/vistas empleadas por los Datasets de ese Dashboard, indicando que columnas o métricas calculadas fueron añadidas de forma adicional
-- [ ] Archivos sql (esquema y datos por separado) de la base de datos del DataMart
-- [ ] Archivos json resultado de la exportación de cada uno de los Dashboard
-- [ ] Archivos yaml correspondientes a la exportación de cada uno de los Datasets
+- [x] Archivos sql (esquema y datos por separado) de la base de datos del DataMart
+- [x] Archivos json resultado de la exportación de cada uno de los Dashboard
+- [x] Archivos yaml correspondientes a la exportación de cada uno de los Datasets
 - [ ] Documento txt con cualquier instrucción a tener en cuenta
 
 #### Entrega Kettle

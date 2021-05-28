@@ -1,0 +1,24 @@
+- columns:
+  - column_name: venta_last_update
+    is_dttm: true
+    type: DATETIME
+  - column_name: programa_nombre
+    type: STRING
+  - column_name: programa_proyecto_jefe_exp
+    type: INT
+  - column_name: programa_proyecto_tiempo
+    type: INT
+  - column_name: programa_valoraciones
+    type: INT
+  - column_name: programa_versiones
+    type: INT
+  - column_name: programa_proyecto_presupuesto
+  metrics:
+  - expression: count(*)
+    metric_name: count
+  schema: dwh
+  sql: "SELECT\n  venta_last_update,\n  programa_nombre,\n  programa_proyecto,\n \
+    \ programa_versiones,\n  programa_valoraciones,\n  programa_proyecto_presupuesto,\n\
+    \  programa_proyecto_tiempo,\n  programa_proyecto_jefe_exp \nFROM fact_venta\n\
+    \  LEFT JOIN dim_programa ON venta_programa = programa_ID"
+  table_name: ventas/programa
