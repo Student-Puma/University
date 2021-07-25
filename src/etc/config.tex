@@ -1,0 +1,36 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  ~ Trabajo de Fin de Grado - Universidad de Vigo (ESEI) ~    %%
+%% Autor: Diego Enrique Fontán Lorenzo                          %%
+%% Tutor: Miguel Ramón Díaz-Cacho Medina                        %%
+%% Convocatoria: Julio 2020/21                                  %%
+%% Título: Framework de automatización de auditorías Red Team   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand\TODO[1]{----- \textbf{TODO:} \textit{#1} -----}
+\newcommand{\n}{\\\vspace{12pt}}                    % new line
+\newcommand{\sn}{\\\vspace{0pt}}                    % small new line
+\newcommand{\fig}[1]{(\textit{Fig. \ref{fig:#1})}}  % figure reference
+\newcommand{\tab}[1]{(\textit{Tab. \ref{tab:#1})}} % table reference
+\newcommand{\blankpage}{                            % blank page
+    \newpage\thispagestyle{empty}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Style
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% contents
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+% titles
+\titleformat{\chapter}{\Huge\bfseries}{\thechapter\hspace{20pt}{|}\hspace{20pt}}{0pt}{\Huge\bfseries}
+
+% header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LO]{\titulo}
+\fancyhead[RE]{\leftmark}
+\fancyfoot[CE,CO]{\thepage}

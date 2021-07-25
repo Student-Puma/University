@@ -1,0 +1,86 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  ~ Trabajo de Fin de Grado - Universidad de Vigo (ESEI) ~    %%
+%% Autor: Diego Enrique Fontán Lorenzo                          %%
+%% Tutor: Miguel Ramón Díaz-Cacho Medina                        %%
+%% Convocatoria: Julio 2020/21                                  %%
+%% Título: Framework de automatización de auditorías Red Team   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Requirements
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Análisis de requisitos} \label{cap:requirements}
+
+En este capítulo se resumen los requisitos descritos en el apartado \ref{sub:requirements}, agrupándolos por funcionalidad y categoría, utilizando un lenguaje natural.\n
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Functional
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Requisitos funcionales} \label{sub:funcrequirements}
+\vspace{1cm}
+
+\textbf{El sistema debe ser capaz de realizar auditorías de seguridad}\sn
+
+Actualmente existen múltiples metodologías enfocadas a la realización de auditorías de ciberseguridad, como pueden ser \textit{OWASP WSTG} \cite{owaspwstg} o \textit{MITRE ATT\&CK} \cite{mitre}. Dichas metodologías definen una serie de controles o pruebas que deben ser llevadas a cabo por un auditor para garantizar la seguridad de los activos.\sn
+
+La aplicación debe poder realizar tareas con el fin de garantizar el seguimiento de los controles más habituales.\sn
+
+Las historias de usuario relativas a este requisito son: \footnotesize\color{black!90}
+\textbf{HU02}, \textbf{HU04}, \textbf{HU09}, \textbf{HU13} y \textbf{HU14}.
+\normalsize\color{black}\n
+
+\textbf{El usuario podrá definir diferentes flujos de ejecución}\sn
+
+Es importante que las tareas se realicen en un orden concreto, proporcionando al usuario los mecanismos para controlarlo, incluyendo la habilidad de establecer condiciones o de definir varios flujos de datos simultáneos.\sn
+
+También debe ser capaz emitir eventos que inicien el flujo del programa, así como visualizar el estado actual del mismo.\sn
+
+Las historias de usuario relativas a este requisito son: \footnotesize\color{black!90}
+\textbf{HU03}, \textbf{HU06}, \textbf{HU07} y \textbf{HU08}.
+\normalsize\color{black}\n
+
+\newpage
+\textbf{El sistema podrá extender su la funcionalidad mediante nuevos controles}\sn
+
+Debido a que el mundo de la ciberseguridad está en constante cambio, es necesario que el sistema sea capaz de extenderse a través de la creación de nuevos controles sin la necesidad de cambiar el código base.\sn
+
+Los nodos deberán estar definidos en función de una plantilla estándar que sepa interpretar la aplicación. Ésta última debe constar con un control de versiones para evitar problemas de compatibilidad.\sn
+
+Las historias de usuario relativas a este requisito son: \footnotesize\color{black!90}
+\textbf{HU05} y \textbf{HU10}.
+\normalsize\color{black}\n
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% No-Functional
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Requisitos no funcionales} \label{sub:nofuncrequirements}
+\vspace{1cm}
+
+\textbf{El sistema debe ser intuitivo}\sn
+
+Debe tener una interfaz amigable, para que un nuevo usuario no tarde más de un día en aprender a utilizar la aplicación.\sn
+
+Las historias de usuario relativas a este requisito son: \footnotesize\color{black!90}
+\textbf{HU01}, \textbf{HU04}, \textbf{HU15}, \textbf{HU16} y \textbf{HU17}.
+\normalsize\color{black}\n
+
+\textbf{El programa debe poder distribuirse fácimente}\sn
+
+Es necesario que el programa sea fácil de descargar y utilizar en cualquier sistema con el fin de poder ser adoptado en entornos educativos.\sn
+
+Las historias de usuario relativas a este requisito son: \footnotesize\color{black!90}
+\textbf{HU11} y \textbf{HU12}.
+\normalsize\color{black}\n
+
+\textbf{El sistema debe contar con mecanismos de seguridad}\sn
+
+Aunque se trate de una aplicación pensada en un uso limitado (donde el usuario la ejecute solamente cuando sea necesario), es posible valorar la idea de desplegarla sobre un servidor, dando así soporte a múltiples usuarios simultáneamente.\sn
+
+Esto, unido a que el sistema realiza interacciones con servicios externos, requiere que se implementen ciertas medidas de seguridad que garanticen la integridad del sistema anfitrión.\sn
+
+La historia de usuario relativa a este requisito es: \footnotesize\color{black!90}
+\textbf{HU18}.
+\normalsize\color{black}\n

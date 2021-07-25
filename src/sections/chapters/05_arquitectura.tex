@@ -1,0 +1,60 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  ~ Trabajo de Fin de Grado - Universidad de Vigo (ESEI) ~    %%
+%% Autor: Diego Enrique Fontán Lorenzo                          %%
+%% Tutor: Miguel Ramón Díaz-Cacho Medina                        %%
+%% Convocatoria: Julio 2020/21                                  %%
+%% Título: Framework de automatización de auditorías Red Team   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Architecture
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Arquitectura} \label{cap:arch}
+
+En este capítulo se detalla la arquitectura seguida, la cual define de manera abstracta las interfaces y los componentes que llevan a cabo alguna tarea de computación, así como la comunicación entre ellos.\n
+
+\begin{quotation}
+    \textit{``La arquitectura de software se selecciona y diseña con base en objetivos (requisitos) y restricciones. Los objetivos son aquellos prefijados para el sistema de información, [...] como el mantenimiento, la auditoría, flexibilidad e interacción con otros sistemas de información. Las restricciones son aquellas limitaciones [...] derivadas de las tecnologías disponibles para implementar sistemas de información.''} -- Wikipedia.\n
+\end{quotation}
+
+Existen varios tipos de arquitecturas seguidas durante el desarrollo del proyecto. A continuación se detalla cada una de ellas y se explican los beneficios que otorgan al producto final.\n
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Pipeline
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Arquitectura en \textit{pipeline}} \label{sec:pipelinarch}
+
+%La arquitectura basada en filtros (o \textit{pipeline}) \cite{wikiPipeline} consiste en ir transformando un flujo de datos durante un proceso de etapas secuenciales (siendo la entrada de cada una la salida de la anterior) mediante el uso de filtros operacionales. Es muy común en la programación funcional, ya que equivale a la composición de funciones matemáticas.\sn
+
+La arquitectura basada en filtros (o \textit{pipeline}) debe su nombre al uso de tuberías para procesar información. Una \textbf{tubería} es una cola de mensajes, donde un mensaje puede ser cualquier cosa. Un filtro es un proceso, hilo u otro componente que lee perpetuamente los mensajes de una tubería de entrada, uno a la vez, procesa cada mensaje y luego escribe el resultado en una tubería de salida \cite{pipelineArch}.\sn
+
+A pesar de no ser una de las arquitecturas más populares, su uso es frecuente en el mundo de la programación. Como ejemplos, se pueden destacar los patrones que siguen el diseño \textit{map-filter-reduce} para tratamiento de listas, o el intérprete de comandos propio de cualquier sistema operativo, en el que se enlazan tareas por medio de tuberías (o \textit{pipes}).\sn
+
+\textbf{Es la arquitectura base de este proyecto}, debido a que es uno de los principios de la programación visual y, en concreto, la programación basada en flujos de datos. Esta arquitectura es apreciable de forma gráfica mediante el editor de nodos.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Blackboard
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Arquitectura en pizarra} \label{sec:boardarch}
+
+La arquitectura en pizarra \cite{wikiBlackboard} es un marco de trabajo de sistemas que representa un enfoque general para la resolución de problemas basados en conocimiento.\sn
+
+Su concepto es similar a la arquitectura anterior (Apartado \ref{sec:pipelinarch}). Consta de múltiples elementos funcionales, donde cada uno está especializados en una tarea concreta. Estos elementos son conocidos como \textbf{agentes} (en este caso, los nodos). Además, existe un elemento de control denominado \textbf{pizarra} (el editor de nodos). Todos los agentes cooperan para alcanzar una meta común, si bien sus objetivos individuales no suelen estar aparentemente coordinados.\sn
+
+Cabe destacar que no es la arquitectura que mejor detalla al sistema, dado que el comportamiento básico de cualquier agente consiste en examinar la pizarra, realizar su tarea y escribir sus conclusiones en la misma pizarra. En el caso concreto de la aplicación, los agentes interactúan directamente entre sí, aunque pueden obtener el estado de otros agentes mediante la pizarra. Esto permite, a su vez, obtener una traza de las operaciones realizadas durante el proceso de resolución.\sn
+
+Aún así, sí que define correctamente varios aspectos del sistema: la pizarra facilita la conexión, coordinando a los distintos agentes, y los resultados generados por los agentes deben responder a un lenguaje y semántica común.\n
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Services
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Arquitectura orientada a servicios} \label{sec:servicearch}
+
+La arquitectura orientada a servicios \cite{wikiSOA} o \textit{SOA} (del inglés \textit{Service Oriented Architecture}) es un tipo de arquitectura que se basa en la creación de representaciones lógicas de ciertas actividades y que tiene un resultado de negocio específico (por ejemplo: comprobar el crédito de un cliente, obtener datos de clima, consolidar reportes de perforación, \textit{etc.}). Los \textbf{servicios}, a su vez, se definen como funciones sin estado, auto-contenidas, que aceptan una o más llamadas y devuelve una o más respuestas mediante una interfaz bien definida.\sn
+
+En la aplicación, es la arquitectura que sigue la \textbf{API}, la cual estará formada por rutas y \textit{middlewares} que acturán como servicios.\sn
+

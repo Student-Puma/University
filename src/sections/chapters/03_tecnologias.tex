@@ -1,0 +1,191 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  ~ Trabajo de Fin de Grado - Universidad de Vigo (ESEI) ~    %%
+%% Autor: Diego Enrique Fontán Lorenzo                          %%
+%% Tutor: Miguel Ramón Díaz-Cacho Medina                        %%
+%% Convocatoria: Julio 2020/21                                  %%
+%% Título: Framework de automatización de auditorías Red Team   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Technologies
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Tecnologías y lenguajes} \label{cap:tech}
+
+En este capítulo se detallan las tecnologías y lenguajes de programación utilizados durante la realización del trabajo, así como la integración de productos de terceros, cuyo desarrollo no pertenece al autor de este documento.\sn
+
+Ninguna de las tecnologías aquí mencionadas es vinculante al proyecto, pudiendo reemplazarse cada una de ellas por cualquiera de sus alternativas. Todas las elecciones de esta lista se han realizado valorando los conocimientos del autor, así como la comodidad durante el desarrollo.\n
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Golang
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Golang} \label{sec:golang}
+
+\footnotesize\color{gray}
+\url{https://golang.org/}
+\normalsize\color{black}\sn
+
+\begin{wrapfigure}{r}{3cm}
+\includegraphics[width=3cm]{img/tables/11_Golang.png}
+\caption{Mascota de Golang. Gopher.}
+\label{fig:golang}
+\end{wrapfigure}
+
+\textit{Golang} (o \textit{Go}) es un lenguaje de programación enfocado en la concurrencia, desarrollado por \textit{Google}. Está inspirado en la sintaxis de \textit{C}, siendo a su vez un lenguaje que cuenta con un compilador y gestor de dependencias propio. Es dinámico como \textit{Python}, pero destaca al ofrecer un rendimiento similar a \textit{C} o \textit{C++}.\sn
+
+Será el lenguaje de programación principal del programa, encargado de levantar el servidor, manejar las peticiones \textit{HTTP} y servir los archivos estáticos.\sn
+
+La decisión se ha llevado a cabo debido a que ofrece grandes herramientas de trabajo que permiten la ejecución de tareas concurrentes, así como las denominadas \textit{go tools}, enfocadas en proporcionar al programador la capacidad de formatear, evaluar y documentar el código, entre otras cosas. También cuenta con un compilador multiplataforma, independiente del sistema operativo y arquitectura anfitrión, con capacidad de detección de condiciones de carrera (o \textit{race conditions}), además de un gestor de paquetes integrado (similar a \textit{pip} en \textit{Python} o \textit{Gem} en \textit{Ruby}).\n
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Vue.js
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Vue.js} \label{sec:vue}
+
+\footnotesize\color{gray}
+\url{https://vuejs.org/}
+\normalsize\color{black}\sn
+
+\begin{wrapfigure}{r}{2.5cm}
+\includegraphics[width=2.5cm]{img/tables/13_Vue.png}
+\caption{Logo de Vue.}
+\label{fig:vue}
+\end{wrapfigure}
+
+\textit{Vue} (pronunciado \textit{/vju:/}, como \textit{view}) es un \textit{framework} para construir interfaces de usuario. Se enfoca principalmente en la capa de visualización, convirtiéndose así en una elección ideal para el desarrollo de aplicaciones web del tipo \textit{Single-Page}. Además, ofrece herramientas para utilizarlo o integrarlo fácilmente con otras librerías o proyectos existentes.\sn
+
+En este proyecto, será el encargado de manejar la interfaz de usuario.\\
+En un principio se planteó el desarrollo usando \textit{React}\footnote{\textit{React} es una biblioteca \textit{Javascript} de código abierto diseñada para crear interfaces de usuario. \url{https://reactjs.org/}}, pero al final se decidió utilizar \textit{Vue} solamente con la intención de aprender a usarlo.\sn
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Yarn
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Yarn} \label{sec:yarn}
+
+\footnotesize\color{gray}
+\url{https://yarnpkg.com/}
+\normalsize\color{black}\sn
+
+\begin{wrapfigure}{r}{2.5cm}
+\includegraphics[width=2.5cm]{img/tables/12_Yarn.png}
+\caption{Logo de Yarn.}
+\label{fig:yarn}
+\end{wrapfigure}
+
+\textit{Yarn} es un instalador de módulos \textit{JavaScript} y gestor de dependencias desarrollado por \textit{Facebook}, en colaboración con otras organizaciones (como \textit{Google}). Es muy rápido y muy fácil de usar, debido a que fue concebido teniendo la seguridad y el rendimiento como objetivos prioritarios.\sn
+
+Su integración en este proyecto ofrece comodidad al desarrollar. Se puede sustituir por \textit{npm} (su alternativa directa), o prescindir completamente del gestor de dependencias utilizando copias locales del software de terceros requerido.\sn
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% GNU Make
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{GNU Make} \label{sec:make}
+
+\footnotesize\color{gray}
+\url{https://www.gnu.org/software/make/}
+\normalsize\color{black}\sn
+
+\begin{wrapfigure}{r}{2.55cm}
+\includegraphics[width=2.55cm]{img/tables/14_GNU-Make.png}
+\caption{Logo de GNU.}
+\label{fig:make}
+\end{wrapfigure}
+
+\textit{Make} es una herramienta pensada en dirigir la compilación o generación automática de un proyecto. Ofrece una sintaxis propia enfocada en definir tareas con las que ejecutar los comandos necesarios para llevar a cabo el proceso de compilación.\sn
+
+En este proyecto, proporcionará una manera automatizada de generar el programa realizando todas las tareas de compilación necesarias.\sn
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Docker
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Docker} \label{sec:docker}
+
+\footnotesize\color{gray}
+\url{https://docker.com/}
+\normalsize\color{black}\sn
+
+\begin{wrapfigure}{r}{3cm}
+\includegraphics[width=3cm]{img/tables/15_Docker.png}
+\caption{Logo de Docker.}
+\label{fig:docker}
+\end{wrapfigure}
+
+\textit{Docker} es un proyecto enfocado en automatizar el despliegue de aplicaciones dentro de contenedores. Proporcionan una capa adicional de abstracción y permite la automatización de la virtualización de aplicaciones en múltiples sistemas operativos.\sn
+
+Su uso está reservado para poder realizar también la distribución de la aplicación final en forma de contenedor a través de un fichero \textit{Dockerfile}. Además, proporciona la opción de orquestar un entorno completo de desarrollo mediante \textit{docker-compose}.\sn
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Swagger
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Swagger} \label{sec:swagger}
+
+\footnotesize\color{gray}
+\url{https://swagger.io/}
+\normalsize\color{black}\sn
+
+\begin{wrapfigure}{r}{3cm}
+\includegraphics[width=3cm]{img/tables/16_Swagger.png}
+\caption{Logo de Swagger.}
+\label{fig:swagger}
+\end{wrapfigure}
+
+\textit{Swagger} es un conjunto de herramientas de software de código abierto para diseñar, construir, documentar, y utilizar servicios web \textit{RESTful}. Consta de una sintaxis basada en \textit{JSON} o \textit{YAML} para generar documentación automatizada tanto de código como de casos de prueba.\sn
+
+En este proyecto, proporcionará la documentación de las llamadas relativas a la \textit{API}, así como sus requisitos, códigos de respuesta, el modelo de los parámetros y ejemplos de uso.\sn
+
+La documentación generada no será incluida en la versión compilada debido a que se consideraría una vulnerabilidad del tipo \textit{Information Disclosure}. Además, al ser un \textit{software} de terceros, podría causar nuevos vectores de ataques contra la aplicación. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LaTeX
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\LaTeX} \label{sec:latex}
+
+\footnotesize\color{gray}
+\url{https://latex-project.org/}
+\normalsize\color{black}\sn
+
+\begin{wrapfigure}{r}{3cm}
+\includegraphics[width=3cm]{img/tables/17_LaTeX.png}
+\caption{Logo de \LaTeX.}
+\label{fig:latex}
+\end{wrapfigure}
+
+``\LaTeX\textbf{ }\emph{es un sistema de composición tipográfica de alta calidad. Incluye funciones diseñadas para la producción de documentación técnica y científica. Es el estándar de facto para la comunicación y publicación de documentos científicos, además de que está desarrollado bajo la ideología de software libre.''
+} --\textit{Wikipedia}\sn
+
+Es el sistema con el que está generado este documento. Su elección se debe a su gran capacidad de personalización de artículos mediante código, similar a un lenguaje de programación.\sn
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Other tools
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Otras tecnologías} \label{sec:othertools}
+
+A continuación, se describen otras tecnologías y herramientas secundarias para la realización de este proyecto:\n
+
+\textbf{Git}: Control de versiones pensando en la eficiencia, la confiabilidad y la compatibilidad. Es un estándar para la gestión de repositorios. \color{gray}\url{https://git-scm.com/}\color{black}\n
+
+\textbf{GitHub}: Web enfocada a alojar proyectos utilizando el sistema de control de versiones \textit{Git}. \color{gray}\url{https://github.com/}\color{black}\n
+
+\textbf{Visual Studio Code}: Editor de código fuente. Ofrece soporte para la depuración, control de versiones, resaltado de sintaxis, finalización inteligente de código y refactorización. \color{gray}\url{https://code.visualstudio.com/}\color{black}\n
+
+\textbf{UPX}: Empaquetador de ejecutables, portable y de alto rendimiento. Además, incluye funciones de protector de software. \color{gray}\url{https://upx.github.io/}\color{black}\n
+
+\textbf{VMware Workstation Pro}: Hipervisor alojado para la gestión de máquinas virtuales. \color{gray}\url{https://www.vmware.com/products/workstation-pro.html}\color{black}\n
+
+\textbf{Trello}: Tablón virtual versátil e intuitivo usado para cualquier tipo de tarea que requiera organizar información. \color{gray}\url{https://trello.com}\color{black}\n
+
+\textbf{MockFlow}: Herramienta de \textit{wireframing}. Permite crear \textit{wireframes} y \textit{mockups} en la nube. \color{gray}\url{https://mockflow.com}\color{black}\n
+
+\textbf{Google Sheets}: Programa de hoja de cálculo de \textit{Google} basado en la web. \color{gray}\url{https://docs.google.com/spreadsheets}\color{black}\sn
+
+Como mención especial, se ha utilizado la librería \textbf{ReteJS} (\url{https://rete.js.org/}) para manejar el flujo de datos. Las limitaciones de la misma, como pueden ser los eventos personalizados, controles sobre el estado del editor o su correcta integración con \textit{VueJS}, han sido resueltas mediante \textit{plugins} creados por el autor de este documento.

@@ -1,0 +1,81 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  ~ Trabajo de Fin de Grado - Universidad de Vigo (ESEI) ~    %%
+%% Autor: Diego Enrique Fontán Lorenzo                          %%
+%% Tutor: Miguel Ramón Díaz-Cacho Medina                        %%
+%% Convocatoria: Julio 2020/21                                  %%
+%% Título: Framework de automatización de auditorías Red Team   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt,a4paper]{book}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Includes
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{etc/pkgs}              % packages
+\include{etc/config}            % configuration
+\addbibresource{references.bib} % bibliography
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Metainformation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\autor}{Diego Enrique Fontán Lorenzo}
+\newcommand{\tutor}{Miguel Ramón Díaz-Cacho Medina}
+\newcommand{\titulo}{Framework de automatización de auditorías Red Team}
+\author{\autor} \title{\titulo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+    % cover
+    \include{sections/portada}
+    % dedicated to
+    \blankpage\null
+    \include{sections/dedicatoria}
+    % table of contents
+    \blankpage
+    \frontmatter
+    \tableofcontents
+    \blankpage
+    \listoffigures
+    \blankpage
+    \listoftables
+    % content
+    \blankpage
+    \clearpage
+    \mainmatter
+    \include{sections/chapters/01_introduccion}
+    \blankpage
+    \include{sections/chapters/02_planificacion}
+    \blankpage
+    \include{sections/chapters/03_tecnologias}
+    \blankpage
+    \include{sections/chapters/04_requisitos}
+    \blankpage
+    \include{sections/chapters/05_arquitectura}
+    \blankpage
+    \include{sections/chapters/06_diseño}
+    \blankpage
+    \include{sections/chapters/07_gestion}
+    \blankpage
+    \include{sections/chapters/08_pruebas}
+    \blankpage
+    \include{sections/chapters/09_epílogo}
+    % appendix
+    \appendix
+    \blankpage
+    \stepcounter{page}
+    \addcontentsline{toc}{chapter}{A. Bibliografía}
+    \renewcommand\bibname{A\hspace{20pt}|\hspace{20pt}Bibliografía}
+    \printbibliography \label{anx:bib}
+    \stepcounter{chapter}
+    \blankpage
+    \fancyhead[RE]{\thechapter\hspace{20pt}|\hspace{20pt}MANUAL DE USUARIO}
+    \include{sections/appendix/manual}
+    \blankpage
+    \fancyhead[RE]{\thechapter\hspace{20pt}|\hspace{20pt}OWASP -- WEB SECURITY TESTING GUIDE}
+    \include{sections/appendix/owasp}
+\end{document}
